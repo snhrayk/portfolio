@@ -1,0 +1,38 @@
+@import "common";
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  display: flex;
+  //   justify-content: space-around;
+  align-items: end;
+  flex-direction: column;
+  margin-right: 40px;
+  .navChild {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    // border: 1px solid tomato;
+    img {
+      width: 60px;
+      height: auto;
+    }
+    // img:hover {
+    //   width: 64px;
+    //   border: 2px solid $shadowLine;
+    //   background-color: $bgBlur;
+    //   border-radius: 6px;
+    // }
+    h1 {
+      font-size: 1.6rem;
+      font-family: $font;
+      font-weight: 500;
+      color: $black;
+    }
+  }
+}

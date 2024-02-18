@@ -1,23 +1,26 @@
-import styles from "../styles/nav.module.css";
+import styles from "../styles/nav.module.scss";
 
 export default function Nav() {
   return (
-    <nav className={styles.navWrap}>
-      <section>
-        <img src="../image" alt="about" />
-        <h1>about</h1>
+    <nav>
+      <section className={styles.navChild}>
+        <img
+          src="./image/about.png"
+          alt="希望職種や勉強中の言語・アプリについて"
+        />
+        <h1>About</h1>
       </section>
-      <section>
-        <img src="" alt="" />
-        <h1></h1>
+      <section className={styles.navChild}>
+        <img src="./image/profile.png" alt="私の自己紹介" />
+        <h1>Profile</h1>
       </section>
-      <section>
-        <img src="" alt="" />
-        <h1></h1>
+      <section className={styles.navChild}>
+        <img src="./image/works.png" alt="作品一覧" />
+        <h1>Works</h1>
       </section>
-      <section>
-        <img src="" alt="" />
-        <h1></h1>
+      <section className={styles.navChild}>
+        <img src="./image/contact.png" alt="私の連絡先・SNS" />
+        <h1>Contact</h1>
       </section>
     </nav>
   );

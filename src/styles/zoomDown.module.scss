@@ -1,0 +1,18 @@
+@import "common";
+
+html {
+  font-size: 62.5%;
+}
+
+.zoomDownBtn {
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid $white;
+  border-left: 1px solid $white;
+  border-right: 1px solid $black;
+  border-bottom: 1px solid $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $shadowLine;
+}

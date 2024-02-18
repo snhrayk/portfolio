@@ -4,26 +4,30 @@ html {
   font-size: 62.5%;
 }
 
-.footerWrap {
-  width: 100%;
-  height: 5rem;
-  background-color: $mainColor;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 2px solid $black;
-  border-bottom: 2px solid $black;
-  .snsWrap {
-    margin-left: 150px;
-    a {
-      margin: 0 10px;
+.borderTop {
+  border-top: 2px solid $shadowLine;
+  .footerWrap {
+    width: 100%;
+    height: 8vh;
+    background-color: $mainColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid $black;
+    border-bottom: 2px solid $black;
+    .snsWrap {
+      margin-left: 150px;
+      a {
+        margin: 0 10px;
+      }
     }
-  }
-  p,
-  small {
-    font-family: "PixelMplus10", sans-serif;
-    font-size: 2.4rem;
-    color: white;
-    margin-right: 14px;
+    // p,
+    // time {
+    //   font-family: $font;
+    //   font-weight: 500;
+    //   font-size: 2.4rem;
+    //   color: white;
+    //   margin-right: 50px;
+    // }
   }
 }
