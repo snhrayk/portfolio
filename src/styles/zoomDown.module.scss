@@ -16,3 +16,11 @@ html {
   align-items: center;
   background-color: $shadowLine;
 }
+
+.zoomDownBtn:active {
+  background-color: gray;
+  border-top: 1px solid $black;
+  border-left: 1px solid $black;
+  border-right: none;
+  border-bottom: none;
+}

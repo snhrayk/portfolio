@@ -9,6 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    {/* App.tsxコンポーネント */}
     <App />
   </React.StrictMode>
 );

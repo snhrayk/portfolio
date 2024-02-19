@@ -26,9 +26,10 @@ export default function Footer() {
             <img src="/image/instagram_icon.svg" alt="私のInstagram" />
           </a>
         </div>
-        {/* <p>
-          <time>{time.toLocaleTimeString()}</time>
-        </p> */}
+        <p>
+          <small>© 2024 Sunahara Ayaka's Portfolio</small>
+          {/* <time>{time.toLocaleTimeString()}</time> */}
+        </p>
       </div>
     </div>
   );

@@ -21,13 +21,13 @@ html {
         margin: 0 10px;
       }
     }
-    // p,
-    // time {
-    //   font-family: $font;
-    //   font-weight: 500;
-    //   font-size: 2.4rem;
-    //   color: white;
-    //   margin-right: 50px;
-    // }
+    p,
+    small {
+      font-family: $font;
+      font-weight: 500;
+      font-size: 2rem;
+      color: white;
+      margin-right: 50px;
+    }
   }
 }

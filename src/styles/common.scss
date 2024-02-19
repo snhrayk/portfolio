@@ -1,4 +1,11 @@
 // font-family
+@font-face {
+  font-family: "PixelMplus10";
+  src: url(../../public/fonts/PixelMplus-20130602/PixelMplus10-Regular.woff)
+      format("woff"),
+    url(../../public/fonts/PixelMplus-20130602/PixelMplus10-Regular.woff2)
+      format("woff2");
+}
 $font: "PixelMplus10", sans-serif;
 
 // color

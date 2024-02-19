@@ -6,6 +6,7 @@ import Nav from "./components/nav";
 import Close from "./components/parts/close";
 import ZoomUp from "./components/parts/zoomUp";
 import ZoomDown from "./components/parts/zoomDown";
+import Msg from "./components/msg";
 
 function App() {
   const app = {
@@ -16,13 +17,14 @@ function App() {
   };
   const main = {
     width: "100%",
-    height: "91.7vh",
+    height: "91.8vh",
   };
 
   return (
     <div style={app}>
       <main style={main}>
         <Nav />
+        {/* <Msg /> */}
       </main>
       <Footer />
     </div>

@@ -11,7 +11,7 @@ nav {
   flex-direction: column;
   margin-right: 40px;
   .navChild {
-    width: auto;
+    width: 60px;
     height: auto;
     display: flex;
     align-items: center;
@@ -22,17 +22,24 @@ nav {
       width: 60px;
       height: auto;
     }
-    // img:hover {
-    //   width: 64px;
-    //   border: 2px solid $shadowLine;
-    //   background-color: $bgBlur;
-    //   border-radius: 6px;
-    // }
     h1 {
       font-size: 1.6rem;
       font-family: $font;
       font-weight: 500;
       color: $black;
+    }
+  }
+  .navChild:hover {
+    img {
+      width: 60px;
+      border: 2px solid $shadowLine;
+      background-color: $bgBlur;
+      border-radius: 6px;
+    }
+    h1 {
+      background-color: $bgBlur;
+      border-radius: 6px;
+      padding: 0 4px;
     }
   }
 }
