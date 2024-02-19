@@ -7,6 +7,7 @@ import Close from "./components/parts/close";
 import ZoomUp from "./components/parts/zoomUp";
 import ZoomDown from "./components/parts/zoomDown";
 import Msg from "./components/msg";
+import Window from "./components/window";
 
 function App() {
   const app = {
@@ -24,7 +25,8 @@ function App() {
     <div style={app}>
       <main style={main}>
         <Nav />
-        {/* <Msg /> */}
+        <Msg />
+        {/* <Window /> */}
       </main>
       <Footer />
     </div>
