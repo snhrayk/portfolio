@@ -1,0 +1,12 @@
+@import "common";
+
+html {
+  font-size: 62.5%;
+}
+
+.profileWrap {
+  width: 100%;
+  height: 500vh;
+  overflow: auto;
+  background-color: $white;
+}
