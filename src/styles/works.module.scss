@@ -35,9 +35,6 @@ html {
       position: relative;
       top: 0;
       right: 0;
-      background-image: url("../../public/image/herstel.png");
-      background-position: center;
-      background-size: cover;
       img {
         width: 20%;
         height: auto;
@@ -54,6 +51,7 @@ html {
       font-size: 1.2rem;
       margin-left: 1.4rem;
       margin-bottom: 2rem;
+      height: 2.6rem;
     }
     .btmWrap {
       width: 100%;
@@ -79,6 +77,16 @@ html {
         color: $white;
       }
     }
+  }
+  .herstel > .imgArea {
+    background-image: url("../../public/image/herstel.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .florita > .imgArea {
+    background-image: url("../../public/image/florita_thumbnail2.png");
+    background-position: left;
+    background-size: cover;
   }
   section:nth-child(odd) {
     border-right: none;
