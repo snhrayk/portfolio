@@ -40,7 +40,7 @@ export default function Works() {
           初めてのチーム制作。
         </p>
         <div className={styles.btmWrap}>
-          <p className={styles.workDate}>夏期講習(SIC)</p>
+          <p className={styles.workDate}>夏期講習</p>
           <button>詳細を見る</button>
         </div>
       </section>
