@@ -5,6 +5,8 @@ import ZoomDown from "./parts/zoomDown";
 import ZoomUp from "./parts/zoomUp";
 import About from "./windowPages/about";
 import Profile from "./windowPages/profile";
+import Works from "./windowPages/works";
+import Herstel from "./windowPages/works/herstel";
 
 export default function Window(props: any) {
   return (
@@ -19,7 +21,9 @@ export default function Window(props: any) {
       </div>
       <div className={styles.pageArea}>
         {/* <About /> */}
-        <Profile />
+        {/* <Profile /> */}
+        <Works />
+        {/* <Herstel /> */}
       </div>
     </div>
   );

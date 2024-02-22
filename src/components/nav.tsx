@@ -63,7 +63,7 @@ export default function Nav() {
           isOpen && (
             <Window
               key={index}
-              // title={`ウィンドウ ${index + 1}`}
+              // title={`${index + 1}`}
               onClose={() => handleCloseWindow(index)}
             />
           )
