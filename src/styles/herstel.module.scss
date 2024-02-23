@@ -4,15 +4,20 @@ html {
   font-size: 62.5%;
 }
 
-header {
+.container {
   width: 100%;
-  height: 5vh;
-  background-color: $headerWorks;
-  display: flex;
-  align-items: center;
-  padding-left: 2rem;
-  font-family: $font;
-  h1 {
-    color: $white;
+  height: 300vh;
+  overflow-y: auto;
+  header {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    font-family: $subFont;
+    h1 {
+      color: $white;
+      font-size: 2.4rem;
+    }
   }
 }

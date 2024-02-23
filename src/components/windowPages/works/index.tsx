@@ -15,9 +15,10 @@ export default function Works() {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.top}>
+      <header>
         <h1>学校作品</h1>
-      </div>
+        {/* <p></p> */}
+      </header>
       <section className={styles.herstel}>
         <div className={styles.imgArea}>
           <img src="../../image/award.svg" alt="賞" />

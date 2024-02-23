@@ -21,8 +21,8 @@ export default function Window(props: any) {
       </div>
       <div className={styles.pageArea}>
         {/* <About /> */}
-        {/* <Profile /> */}
-        <Works />
+        <Profile />
+        {/* <Works /> */}
         {/* <Herstel /> */}
       </div>
     </div>
