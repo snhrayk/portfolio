@@ -26,7 +26,7 @@ function App() {
       <main style={main}>
         <Nav />
         <Msg />
-        <Window />
+        {/* <Window /> */}
       </main>
       <Footer />
     </div>
