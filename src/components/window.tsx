@@ -9,6 +9,15 @@ import Works from "./windowPages/works";
 import Herstel from "./windowPages/works/herstel";
 
 export default function Window(props: any) {
+  const renderContent = () => {
+    switch (props.activeSection) {
+      case 1: // "プロフィール"セクションのインデックス
+        return <Profile />;
+      // 必要に応じて他のセクションのケースを追加
+      default:
+        return null;
+    }
+  };
   return (
     <div className={styles.windowWrap}>
       <div className={styles.bar}>
@@ -21,9 +30,10 @@ export default function Window(props: any) {
       </div>
       <div className={styles.pageArea}>
         {/* <About /> */}
-        <Profile />
+        {/* <Profile /> */}
         {/* <Works /> */}
         {/* <Herstel /> */}
+        {renderContent()}
       </div>
     </div>
   );

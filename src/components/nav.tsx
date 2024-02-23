@@ -9,20 +9,20 @@ export default function Nav() {
     false,
     false,
   ]);
+  const [activeSection, setActiveSection] = useState<number | null>(null); // アクティブなセクションを追跡するための状態
 
-  // セクションがダブルクリックされたときにウィンドウを表示する関数
   const handleSectionDoubleClick = (index: number) => {
-    // ウィンドウを表示するために対応するウィンドウの状態を true に設定
     const updatedWindows = [...windows];
     updatedWindows[index] = true;
     setWindows(updatedWindows);
+    setActiveSection(index); // アクティブなセクションのインデックスを設定
   };
 
-  // ウィンドウが閉じられたときに表示状態を変更する関数
   const handleCloseWindow = (index: number) => {
     const updatedWindows = [...windows];
     updatedWindows[index] = false;
     setWindows(updatedWindows);
+    setActiveSection(null); // ウィンドウを閉じるときにアクティブなセクションをリセット
   };
 
   return (
@@ -39,7 +39,7 @@ export default function Nav() {
       </section>
       <section
         className={styles.navChild}
-        onDoubleClick={() => handleSectionDoubleClick(0)}
+        onDoubleClick={() => handleSectionDoubleClick(1)} // 必要に応じてインデックスを調整
       >
         <img src="./image/profile.png" alt="私の自己紹介" />
         <h1>Profile</h1>
@@ -63,7 +63,7 @@ export default function Nav() {
           isOpen && (
             <Window
               key={index}
-              // title={`${index + 1}`}
+              activeSection={activeSection} // アクティブなセクションをプロップとして渡す
               onClose={() => handleCloseWindow(index)}
             />
           )
