@@ -1,5 +1,5 @@
-// import {  } from "module";
+import styles from "../../styles/about.module.scss";
 
 export default function About() {
-  return <></>;
+  return <div className={styles.container}>aaa</div>;
 }

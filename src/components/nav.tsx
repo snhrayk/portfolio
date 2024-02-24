@@ -29,7 +29,7 @@ export default function Nav() {
     <nav>
       <section
         className={styles.navChild}
-        onDoubleClick={() => handleSectionDoubleClick(0)}
+        onDoubleClick={() => handleSectionDoubleClick(0)} // Aboutセクション
       >
         <img
           src="./image/about.png"
@@ -46,14 +46,14 @@ export default function Nav() {
       </section>
       <section
         className={styles.navChild}
-        onDoubleClick={() => handleSectionDoubleClick(0)}
+        onDoubleClick={() => handleSectionDoubleClick(2)}
       >
         <img src="./image/works.png" alt="作品一覧" />
         <h1>Works</h1>
       </section>
       <section
         className={styles.navChild}
-        onDoubleClick={() => handleSectionDoubleClick(0)}
+        onDoubleClick={() => handleSectionDoubleClick(3)}
       >
         <img src="./image/contact.png" alt="私の連絡先・SNS" />
         <h1>Contact</h1>

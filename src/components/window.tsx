@@ -7,13 +7,19 @@ import About from "./windowPages/about";
 import Profile from "./windowPages/profile";
 import Works from "./windowPages/works";
 import Herstel from "./windowPages/works/herstel";
+import Contact from "./windowPages/contact";
 
 export default function Window(props: any) {
   const renderContent = () => {
     switch (props.activeSection) {
-      case 1: // "プロフィール"セクションのインデックス
+      case 0:
+        return <About />;
+      case 1:
         return <Profile />;
-      // 必要に応じて他のセクションのケースを追加
+      case 2:
+        return <Works />;
+      case 3:
+        return <Contact />;
       default:
         return null;
     }
