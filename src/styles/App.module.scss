@@ -1,0 +1,21 @@
+@import "common";
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background-color: $mint;
+  //   animation: bgColor 2s infinite alternate;
+  //   @keyframes bgColor {
+  //     0% {
+  //       background-color: $mint;
+  //     }
+  //     100% {
+  //       background-color: $white;
+  //     }
+  //   }
+  cursor: url("../../public/image/cursor.png"), auto;
+}
+.main {
+  width: 100%;
+  height: 91.8vh;
+}
