@@ -4,18 +4,104 @@
   width: 100%;
   height: 100vh;
   background-color: $mint;
-  //   animation: bgColor 2s infinite alternate;
-  //   @keyframes bgColor {
-  //     0% {
-  //       background-color: $mint;
-  //     }
-  //     100% {
-  //       background-color: $white;
-  //     }
+  // animation: bgColor 4s infinite;
+  // @keyframes bgColor {
+  //   0% {
+  //     background-color: $mint;
   //   }
+  //   100% {
+  //     background-color: $white;
+  //   }
+  // }
   cursor: url("../../public/image/cursor.png"), auto;
-}
-.main {
-  width: 100%;
-  height: 91.8vh;
+  .main {
+    width: 100%;
+    height: 91.8vh;
+    .imgWrap {
+      width: 56rem;
+      height: 36rem;
+      // border: 1px solid tomato;
+      background-image: url(../../public/image/portfolioText.png);
+      background-size: contain;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: float 8s infinite;
+      @keyframes float {
+        0% {
+          transform: translate(-50%, -50%);
+        }
+        50% {
+          transform: translate(-50%, -48%);
+        }
+        100% {
+          transform: translate(-50%, -50%);
+        }
+      }
+      img:first-child {
+        width: 26%;
+        height: auto;
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        animation: zoomUp 4s infinite;
+        @keyframes zoomUp {
+          0% {
+            transform: translate(-50%, -50%) scale(1);
+          }
+          50% {
+            transform: translate(-50%, -50%) scale(1.1);
+          }
+          100% {
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+      }
+      img:nth-child(2) {
+        width: 18%;
+        height: auto;
+        position: absolute;
+        top: 30%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+        animation: zoomUp 4s infinite;
+        @keyframes zoomUp {
+          0% {
+            transform: translate(-50%, -50%) scale(1);
+          }
+          20% {
+            transform: translate(-50%, -50%) scale(1.1);
+          }
+          100% {
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+      }
+      img:last-child {
+        width: 26%;
+        height: auto;
+        position: absolute;
+        top: 92%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        animation: zoomUp 4s infinite;
+        @keyframes zoomUp {
+          0% {
+            transform: translate(-50%, -50%) scale(1);
+          }
+          70% {
+            transform: translate(-50%, -50%) scale(1.1);
+          }
+          100% {
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+      }
+    }
+  }
 }

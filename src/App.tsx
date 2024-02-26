@@ -13,10 +13,15 @@ import Window from "./components/window";
 function App() {
   return (
     <div className={styles.app}>
+      {/* <Nav /> */}
       <main className={styles.main}>
-        <Nav />
+        <div className={styles.imgWrap}>
+          <img src="../image/kirakira1.png" alt="右上の大きなキラキラ" />
+          <img src="../image/kirakira2.png" alt="右上の小さなキラキラ" />
+          <img src="../image/kirakira3.png" alt="左下のキラキラ" />
+        </div>
         <Msg />
-        <Window />
+        {/* <Window /> */}
       </main>
       <Footer />
     </div>
