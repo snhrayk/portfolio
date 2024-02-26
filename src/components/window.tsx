@@ -38,7 +38,7 @@ export default function Window(props: any) {
         {/* <About /> */}
         {/* <Profile /> */}
         {/* <Works /> */}
-        {/* <Herstel /> */}
+        <Herstel />
         {renderContent()}
       </div>
     </div>

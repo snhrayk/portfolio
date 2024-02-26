@@ -13,6 +13,8 @@ export default function Profile() {
             <span>ECCコンピュータ専門学校</span>
             <br />
             マルチメディア研究学科/Webデザインコース
+            <br />
+            26年卒業予定
           </p>
           <p className={styles.bir}>
             <time dateTime="2005-02-21">2005年2月21日生まれ</time>
