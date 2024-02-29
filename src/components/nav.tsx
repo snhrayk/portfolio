@@ -10,6 +10,7 @@ export default function Nav() {
     false,
   ]);
   const [activeSection, setActiveSection] = useState<number | null>(null); // アクティブなセクションを追跡するための状態
+  const [sectionTitles] = useState(["About", "Profile", "Works", "Contact"]); // セクションのタイトルを定義
 
   const handleSectionDoubleClick = (index: number) => {
     const updatedWindows = [...windows];
@@ -63,11 +64,12 @@ export default function Nav() {
           isOpen && (
             <Window
               key={index}
+              title={sectionTitles[index]} // タイトルを渡す
               activeSection={activeSection} // アクティブなセクションをプロップとして渡す
               onClose={() => handleCloseWindow(index)}
             />
           )
-      )}{" "}
+      )}
     </nav>
   );
 }
