@@ -4,6 +4,10 @@
   width: 100%;
   height: 100vh;
   background-color: $mint;
+  // background: url(../../public/image/grid.svg), $mint;
+  // background-position: center;
+  // background-size: center;
+  // background-repeat: repeat;
   // animation: bgColor 4s infinite;
   // @keyframes bgColor {
   //   0% {
@@ -30,10 +34,11 @@
       // justify-content: center;
       // align-items: center;
       position: absolute;
-      top: 50%;
+      top: 48%;
       left: 50%;
       transform: translate(-50%, -50%);
       animation: float 8s infinite;
+      filter: drop-shadow(0.5rem 0.5rem 0.5rem $bgBlur2);
       @keyframes float {
         0% {
           transform: translate(-50%, -50%);
@@ -86,7 +91,7 @@
         }
       }
       img:last-child {
-        width: 26%;
+        width: 24%;
         height: auto;
         position: absolute;
         top: 92%;
