@@ -6,55 +6,59 @@ html {
 
 .profWrap {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   overflow: scroll;
-  background-color: $white;
-  // background-image: url(../../public/image/note.svg);
+  background: url(../../public/image/grid.png), $bgBlur;
   .profTop {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-top: 7rem;
+    justify-content: space-evenly;
     // border: 1px solid tomato;
     .imgWrap {
-      width: 40%;
-      padding-top: 40%;
-      background-color: $mainColor;
-      border: 4px solid $mainColor;
-      // background-image: url(./image/profileImg.png);
+      width: 30%;
+      height: 40rem;
+      margin-top: 7rem;
+      background-image: url(../../public/image/me.png);
+      background-size: cover;
+      border-radius: 10px;
+      box-shadow: 10px 10px 0 0 $pink;
+      transform: rotate(-4deg);
     }
     .textTop {
-      width: 50%;
+      width: 60%;
       height: auto;
+      margin-top: 3rem;
+      // border: 1px solid tomato;
       color: $black;
       font-family: $subFont;
-      margin-top: 6rem;
-      // border: 1px solid tomato;
       h1 {
-        font-size: 3.6rem;
-        font-weight: bold;
-        // border-bottom: 1px solid $mainColor;
+        font-size: 4rem;
+        font-family: $prfTtl;
+        color: $pink;
+        transform: translate(-10rem, 0) rotate(-4deg);
         span {
           margin-left: 2rem;
-          font-size: 2rem;
+          font-size: 7.4rem;
         }
       }
-      p {
-        margin: 1rem 0 0 2rem;
+      .name {
+        font-size: 3rem;
+        margin-top: 5rem;
+        margin-left: 2rem;
       }
       .sch {
-        font-size: 1.6rem;
-        margin-top: 1.6rem;
-        span:first-child {
-          font-size: 2rem;
+        font-size: 2rem;
+        margin-top: 1.4rem;
+        margin-left: 3.4rem;
+        span {
+          font-size: 1.4rem;
           // color: $bgWorks;
         }
       }
-      .bir {
-        font-size: 2rem;
-      }
       .from {
         font-size: 2rem;
+        margin-top: 1.4rem;
+        margin-left: 3.4rem;
       }
     }
   }

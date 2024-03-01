@@ -13,12 +13,10 @@ export default function Window(props: any) {
   const renderContent = () => {
     switch (props.activeSection) {
       case 0:
-        return <About />;
-      case 1:
         return <Profile />;
-      case 2:
+      case 1:
         return <Works />;
-      case 3:
+      case 2:
         return <Contact />;
       default:
         return null;

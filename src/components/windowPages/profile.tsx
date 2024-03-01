@@ -7,21 +7,22 @@ export default function Profile() {
         <div className={styles.imgWrap}></div>
         <div className={styles.textTop}>
           <h1>
-            砂原彩花<span>Sunahara Ayaka</span>
+            Hi! My name is...
+            <br />
+            <span>Sunahara Ayaka</span>
           </h1>
+          <p className={styles.name}>砂原彩花(すなはらあやか)</p>
           <p className={styles.sch}>
-            <span>ECCコンピュータ専門学校</span>
+            ECCコンピュータ専門学校(26年卒業予定)
             <br />
-            マルチメディア研究学科/Webデザインコース
-            <br />
-            26年卒業予定
+            <span>マルチメディア研究学科 / Webデザインコース</span>
           </p>
-          <p className={styles.bir}>
-            <time dateTime="2005-02-21">2005年2月21日生まれ</time>
+          <p className={styles.from}>
+            兵庫県出身。<time dateTime="2005-02-21">2005年2月21日生まれ。</time>
           </p>
-          <p className={styles.from}>兵庫県出身</p>
         </div>
       </div>
+      <div className={styles.about}></div>
     </div>
   );
 }
