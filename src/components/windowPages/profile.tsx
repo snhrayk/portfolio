@@ -22,7 +22,10 @@ export default function Profile() {
           </p>
         </div>
       </div>
-      <div className={styles.about}></div>
+      <div className={styles.about}>
+        <h2>about</h2>
+        <p>texttexttext</p>
+      </div>
     </div>
   );
 }
