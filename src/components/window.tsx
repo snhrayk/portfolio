@@ -34,7 +34,7 @@ export default function Window(props: any) {
       </div>
       <div className={styles.pageArea}>
         {/* <About /> */}
-        <Profile />
+        {/* <Profile /> */}
         {/* <Works /> */}
         {/* <Herstel /> */}
         {renderContent()}

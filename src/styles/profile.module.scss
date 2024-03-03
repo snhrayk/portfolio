@@ -63,5 +63,41 @@ html {
     }
   }
   .about {
+    font-family: $subFont;
+    text-align: center;
+    h2 {
+      font-family: $prfTtl;
+      font-size: 5rem;
+      color: $pink;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  .skills {
+    font-family: $subFont;
+    text-align: center;
+    h2 {
+      font-family: $prfTtl;
+      font-size: 5rem;
+      color: $pink;
+    }
+    .imgWrap {
+      display: flex;
+      justify-content: space-evenly;
+      .skillsImg {
+        width: 9rem;
+        height: 9rem;
+        background-color: $pink;
+      }
+    }
+  }
+  .myFav {
+    text-align: center;
+    h2 {
+      font-family: $prfTtl;
+      font-size: 5rem;
+      color: $pink;
+    }
   }
 }

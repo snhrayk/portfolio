@@ -22,10 +22,32 @@ export default function Profile() {
           </p>
         </div>
       </div>
-      <div className={styles.about}>
+      <section className={styles.about}>
         <h2>about</h2>
         <p>texttexttext</p>
-      </div>
+      </section>
+      <section className={styles.skills}>
+        <h2>skills</h2>
+        <div className={styles.imgWrap}>
+          <div className={styles.skillsImg}></div>
+          <div className={styles.skillsImg}></div>
+          <div className={styles.skillsImg}></div>{" "}
+          <div className={styles.skillsImg}></div>{" "}
+          <div className={styles.skillsImg}></div>{" "}
+          <div className={styles.skillsImg}></div>{" "}
+          <div className={styles.skillsImg}></div>{" "}
+          <div className={styles.skillsImg}></div>{" "}
+          <div className={styles.skillsImg}></div>{" "}
+          <div className={styles.skillsImg}></div>{" "}
+        </div>
+        <p>
+          全商簿記実務検定１級/全商英語検定１級/全商商業経済検定１級
+          色彩検定２級所有
+        </p>
+      </section>
+      <section className={styles.myFav}>
+        <h2>my fav</h2>
+      </section>
     </div>
   );
 }
