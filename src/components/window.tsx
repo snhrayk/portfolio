@@ -37,6 +37,7 @@ export default function Window(props: any) {
         {/* <Profile /> */}
         {/* <Works /> */}
         {/* <Herstel /> */}
+        {/* <Contact /> */}
         {renderContent()}
       </div>
     </div>
