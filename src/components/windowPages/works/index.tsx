@@ -45,30 +45,48 @@ export default function Works() {
           <button>詳細を見る</button>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className={styles.imgArea}></div>
-        <h2>herstel</h2>
+        <h2>fave#</h2>
         <p className={styles.explain}>
-          今子育てに奮闘中の主婦の方に向けた紅茶定期便サービス。
-          子育ての疲れに効果的な紅茶をご用意しております。
+          洋楽好きに向けたコミュニティWebアプリ。
         </p>
         <div className={styles.btmWrap}>
-          <p className={styles.workDate}>1年前期</p>
+          <p className={styles.workDate}>1年後期</p>
           <button>詳細を見る</button>
         </div>
       </section>
       <section>
         <div className={styles.imgArea}></div>
-        <h2>herstel</h2>
+        <h2>ゆるめ旅</h2>
         <p className={styles.explain}>
-          今子育てに奮闘中の主婦の方に向けた紅茶定期便サービス。
-          子育ての疲れに効果的な紅茶をご用意しております。
+          景色を楽しみながら遠回りをして、目的地へ向かう新しいルート案内アプリ
         </p>
         <div className={styles.btmWrap}>
-          <p className={styles.workDate}>1年前期</p>
+          <p className={styles.workDate}>1年後期</p>
           <button>詳細を見る</button>
         </div>
       </section>
+      <section>
+        <div className={styles.imgArea}></div>
+        <h2>キャンドルナイトポスター</h2>
+        <p className={styles.explain}>中崎町キャンドルナイトのポスター制作。</p>
+        <div className={styles.btmWrap}>
+          <p className={styles.workDate}>1年後期</p>
+          <button>詳細を見る</button>
+        </div>
+      </section>{" "}
+      <section>
+        <div className={styles.imgArea}></div>
+        <h2>名刺</h2>
+        <p className={styles.explain}>
+          自分の名刺をデザインして実際に印刷しました。
+        </p>
+        <div className={styles.btmWrap}>
+          <p className={styles.workDate}>1年</p>
+          <button>詳細を見る</button>
+        </div>
+      </section> */}
     </div>
   );
 }

@@ -8,12 +8,11 @@ html {
   width: 100%;
   height: 200vh;
   overflow: scroll;
-  background: url(../../public/image/grid.png), $bgBlur;
+  background: url(../../public/image/grid.png);
   .profTop {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
-    // border: 1px solid tomato;
     .imgWrap {
       width: 30%;
       height: 40rem;
@@ -28,18 +27,14 @@ html {
       width: 60%;
       height: auto;
       margin-top: 3rem;
-      // border: 1px solid tomato;
       color: $black;
       font-family: $subFont;
       h1 {
-        font-size: 4rem;
-        font-family: $prfTtl;
-        color: $pink;
-        transform: translate(-10rem, 0) rotate(-4deg);
-        span {
-          margin-left: 2rem;
-          font-size: 7.4rem;
-        }
+        // text-align: end;
+        // font-size: 4rem;
+        // font-family: $prfTtl;
+        // color: $pink;
+        transform: translate(-10rem, 0);
       }
       .name {
         font-size: 3rem;

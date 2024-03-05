@@ -66,7 +66,14 @@ html {
         border: 2px solid $black;
         // text-align: center;
         border-radius: 6px;
+        display: flex;
       }
+      // .workDate::after {
+      //   content: "▼";
+      //   display: block;
+      //   clear: both;
+      //   font-size: 1rem;
+      // }
       button {
         width: 74%;
         padding: 1rem;
@@ -75,6 +82,9 @@ html {
         background-color: $mainColor;
         border: 2px solid $black;
         color: $white;
+      }
+      button:hover {
+        background-color: $gray;
       }
     }
   }

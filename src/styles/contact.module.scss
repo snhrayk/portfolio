@@ -64,7 +64,7 @@
   .btnWrap {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     // transform: translate(-50%, -50%);
@@ -73,10 +73,12 @@
       background-color: $mainColor;
       font-size: 2rem;
       color: $white;
+      // border: 1.5px solid $black;
       border-top: 2px solid $white;
       border-left: 2px solid $white;
       border-right: 2px solid $black;
       border-bottom: 2px solid $black;
+      margin-bottom: 3rem;
     }
     button:active {
       background-color: $shadowLine;

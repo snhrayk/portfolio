@@ -7,9 +7,7 @@ export default function Profile() {
         <div className={styles.imgWrap}></div>
         <div className={styles.textTop}>
           <h1>
-            Hi! My name is...
-            <br />
-            <span>Sunahara Ayaka</span>
+            <img src="../../image/profile-title.svg" alt="" />
           </h1>
           <p className={styles.name}>砂原彩花(すなはらあやか)</p>
           <p className={styles.sch}>

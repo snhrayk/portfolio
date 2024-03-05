@@ -3,7 +3,7 @@ export default function Contact() {
   return (
     <div className={styles.contactWrap}>
       <div className={styles.to}>
-        <p>to:</p>
+        <p>from:</p>
         <input type="text" />
       </div>
       <div className={styles.subject}>

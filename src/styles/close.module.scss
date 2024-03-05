@@ -18,7 +18,7 @@ html {
 }
 // クリックしたとき用
 .closeBtn:active {
-  background-color: gray;
+  background-color: $gray;
   border-top: 1px solid $black;
   border-left: 1px solid $black;
   border-right: none;
