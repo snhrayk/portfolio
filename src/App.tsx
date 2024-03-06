@@ -14,11 +14,11 @@ function App() {
   return (
     <div className={styles.app}>
       <main className={styles.main}>
-        <div className={styles.imgWrap}>
+        {/* <div className={styles.imgWrap}>
           <img src="../image/kirakira1.png" alt="右上の大きなキラキラ" />
           <img src="../image/kirakira2.png" alt="右上の小さなキラキラ" />
           <img src="../image/kirakira3.png" alt="左下のキラキラ" />
-        </div>
+        </div> */}
         <Nav />
         <Msg />
         {/* <Window /> */}

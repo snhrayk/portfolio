@@ -25,6 +25,7 @@
       border: 1.5px solid $black;
       margin-left: 2%;
       padding: 0.2rem 1rem;
+      font-family: $subFont;
     }
   }
   .subject {
@@ -44,6 +45,7 @@
       border: 1.5px solid $black;
       margin-left: 2%;
       padding: 0.2rem 1rem;
+      font-family: $subFont;
     }
   }
   .msgArea {
@@ -59,6 +61,7 @@
       background-color: $shadowLine;
       border: 1.5px solid $black;
       padding: 1rem;
+      font-family: $subFont;
     }
   }
   .btnWrap {
