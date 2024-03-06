@@ -3,13 +3,16 @@ import styles from "../../styles/profile.module.scss";
 export default function Profile() {
   return (
     <div className={styles.profWrap}>
-      <div className={styles.profTop}>
+      {/* <div className={styles.profTop}>
         <div className={styles.imgWrap}></div>
         <div className={styles.textTop}>
           <h1>
             <img src="../../image/profile-title.svg" alt="" />
           </h1>
-          <p className={styles.name}>砂原彩花(すなはらあやか)</p>
+          <p className={styles.name}>
+            砂原彩花
+            <span>(すなはらあやか)</span>
+          </p>
           <p className={styles.sch}>
             ECCコンピュータ専門学校(26年卒業予定)
             <br />
@@ -22,7 +25,10 @@ export default function Profile() {
       </div>
       <section className={styles.about}>
         <h2>about</h2>
-        <p>texttexttext</p>
+        <p>
+          フロントエンドエンジニア志望。
+          <br />
+        </p>
       </section>
       <section className={styles.skills}>
         <h2>skills</h2>
@@ -45,7 +51,7 @@ export default function Profile() {
       </section>
       <section className={styles.myFav}>
         <h2>my fav</h2>
-      </section>
+      </section> */}
     </div>
   );
 }

@@ -7,17 +7,20 @@
       format("woff2");
 }
 $font: "PixelMplus10", sans-serif;
+// $subFont: "vdl-penletter", sans-serif;
 $subFont: "osaka", sans-serif;
+$contact: "iroha-21popura-stdn", sans-serif;
 $prfTtl: "pattaya";
-$prfText: "Zen Kurenaido";
 
 // color
 $black: #171717;
 $white: #ffffff;
 $shadowLine: #d9d9d9;
 $mainColor: #62639c;
+$subColor: #abbae5;
 $bgBlur: rgba(256, 256, 256, 0.5);
 $bgBlur2: rgba(23, 23, 23, 0.3);
 $mint: #c2efdb;
 $pink: #f36daf;
 $gray: gray;
+$prfText: #171717;

@@ -7,92 +7,94 @@ html {
 .profWrap {
   width: 100%;
   height: 200vh;
-  overflow: scroll;
-  background: url(../../public/image/grid.png);
-  .profTop {
-    width: 90%;
-    display: flex;
-    justify-content: space-evenly;
-    .imgWrap {
-      width: 30%;
-      height: 40rem;
-      margin-top: 7rem;
-      background-image: url(../../public/image/me.png);
-      background-size: cover;
-      border-radius: 10px;
-      box-shadow: 10px 10px 0 0 $pink;
-      transform: rotate(-4deg);
-    }
-    .textTop {
-      width: 60%;
-      height: auto;
-      margin-top: 3rem;
-      color: $black;
-      font-family: $subFont;
-      h1 {
-        // text-align: end;
-        // font-size: 4rem;
-        // font-family: $prfTtl;
-        // color: $pink;
-        transform: translate(-10rem, 0);
-      }
-      .name {
-        font-size: 3rem;
-        margin-top: 5rem;
-        margin-left: 2rem;
-      }
-      .sch {
-        font-size: 2rem;
-        margin-top: 1.4rem;
-        margin-left: 3.4rem;
-        span {
-          font-size: 1.4rem;
-          // color: $bgWorks;
-        }
-      }
-      .from {
-        font-size: 2rem;
-        margin-top: 1.4rem;
-        margin-left: 3.4rem;
-      }
-    }
-  }
-  .about {
-    font-family: $subFont;
-    text-align: center;
-    h2 {
-      font-family: $prfTtl;
-      font-size: 5rem;
-      color: $pink;
-    }
-    p {
-      font-size: 2rem;
-    }
-  }
-  .skills {
-    font-family: $subFont;
-    text-align: center;
-    h2 {
-      font-family: $prfTtl;
-      font-size: 5rem;
-      color: $pink;
-    }
-    .imgWrap {
-      display: flex;
-      justify-content: space-evenly;
-      .skillsImg {
-        width: 9rem;
-        height: 9rem;
-        background-color: $pink;
-      }
-    }
-  }
-  .myFav {
-    text-align: center;
-    h2 {
-      font-family: $prfTtl;
-      font-size: 5rem;
-      color: $pink;
-    }
-  }
+  overflow: auto;
+  background-color: $subColor;
+  font-family: $subFont;
+  // .profTop {
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: space-evenly;
+  //   // border: 1px solid tomato;
+  //   padding-bottom: 3rem;
+  //   .imgWrap {
+  //     width: 30%;
+  //     height: 40rem;
+  //     margin-top: 7rem;
+  //     background-image: url(../../public/image/me.png);
+  //     background-size: cover;
+  //     border-radius: 10px;
+  //     box-shadow: 10px 10px 0 0 $pink;
+  //     transform: rotate(-4deg);
+  //   }
+  //   .textTop {
+  //     width: 64%;
+  //     height: auto;
+  //     color: $prfText;
+  //     margin-top: 3rem;
+  //     // transform: rotate(-4deg);
+  //     h1 {
+  //       transform: translate(-12rem, 0);
+  //     }
+  //     .name {
+  //       font-size: 4.4rem;
+  //       font-weight: bold;
+  //       margin-left: 8rem;
+  //       span {
+  //         font-size: 3rem;
+  //         margin-left: 1rem;
+  //       }
+  //     }
+  //     .sch {
+  //       font-size: 2.4rem;
+  //       line-height: 3rem;
+  //       margin-left: 9.4rem;
+  //       span {
+  //         font-size: 2rem;
+  //       }
+  //     }
+  //     .from {
+  //       margin-top: 1rem;
+  //       margin-left: 9.4rem;
+  //       font-size: 2.4rem;
+  //     }
+  //   }
+  // }
+  // .about {
+  //   // font-family: $subFont;
+  //   text-align: center;
+  //   h2 {
+  //     font-family: $prfTtl;
+  //     font-size: 5rem;
+  //     color: $pink;
+  //   }
+  //   p {
+  //     font-size: 2rem;
+  //   }
+  // }
+  // .skills {
+  //   // font-family: $subFont;
+  //   text-align: center;
+  //   h2 {
+  //     font-family: $prfTtl;
+  //     font-size: 5rem;
+  //     color: $pink;
+  //   }
+  //   .imgWrap {
+  //     display: flex;
+  //     justify-content: space-evenly;
+  //     .skillsImg {
+  //       width: 9rem;
+  //       height: 9rem;
+  //       background-color: $pink;
+  //     }
+  //   }
+  // }
+  // .myFav {
+  //   text-align: center;
+  //   h2 {
+  //     font-family: $prfTtl;
+  //     font-size: 5rem;
+  //     color: $pink;
+  //   }
+  // }
 }
