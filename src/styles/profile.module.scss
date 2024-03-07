@@ -6,95 +6,216 @@ html {
 
 .profWrap {
   width: 100%;
-  height: 200vh;
+  height: 210vh;
   overflow: auto;
-  background-color: $subColor;
-  font-family: $subFont;
-  // .profTop {
-  //   width: 100%;
-  //   display: flex;
-  //   justify-content: space-evenly;
-  //   // border: 1px solid tomato;
-  //   padding-bottom: 3rem;
-  //   .imgWrap {
-  //     width: 30%;
-  //     height: 40rem;
-  //     margin-top: 7rem;
-  //     background-image: url(../../public/image/me.png);
-  //     background-size: cover;
-  //     border-radius: 10px;
-  //     box-shadow: 10px 10px 0 0 $pink;
-  //     transform: rotate(-4deg);
-  //   }
-  //   .textTop {
-  //     width: 64%;
-  //     height: auto;
-  //     color: $prfText;
-  //     margin-top: 3rem;
-  //     // transform: rotate(-4deg);
-  //     h1 {
-  //       transform: translate(-12rem, 0);
-  //     }
-  //     .name {
-  //       font-size: 4.4rem;
-  //       font-weight: bold;
-  //       margin-left: 8rem;
-  //       span {
-  //         font-size: 3rem;
-  //         margin-left: 1rem;
-  //       }
-  //     }
-  //     .sch {
-  //       font-size: 2.4rem;
-  //       line-height: 3rem;
-  //       margin-left: 9.4rem;
-  //       span {
-  //         font-size: 2rem;
-  //       }
-  //     }
-  //     .from {
-  //       margin-top: 1rem;
-  //       margin-left: 9.4rem;
-  //       font-size: 2.4rem;
-  //     }
-  //   }
-  // }
-  // .about {
-  //   // font-family: $subFont;
-  //   text-align: center;
-  //   h2 {
-  //     font-family: $prfTtl;
-  //     font-size: 5rem;
-  //     color: $pink;
-  //   }
-  //   p {
-  //     font-size: 2rem;
-  //   }
-  // }
-  // .skills {
-  //   // font-family: $subFont;
-  //   text-align: center;
-  //   h2 {
-  //     font-family: $prfTtl;
-  //     font-size: 5rem;
-  //     color: $pink;
-  //   }
-  //   .imgWrap {
-  //     display: flex;
-  //     justify-content: space-evenly;
-  //     .skillsImg {
-  //       width: 9rem;
-  //       height: 9rem;
-  //       background-color: $pink;
-  //     }
-  //   }
-  // }
-  // .myFav {
-  //   text-align: center;
-  //   h2 {
-  //     font-family: $prfTtl;
-  //     font-size: 5rem;
-  //     color: $pink;
-  //   }
-  // }
+  background: url(../../public/image/bg-line.svg) repeat, $subColor;
+  font-family: $font;
+  color: $black;
+  .profTop {
+    width: 80%;
+    height: 40rem;
+    margin: 4rem auto 0;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(256, 256, 256, 0.8);
+    box-shadow: 4px 4px 4px 0px rgba(23, 23, 23, 0.25);
+    border-radius: 3rem;
+    .imgWrap {
+      width: 24rem;
+      height: 30rem;
+      background: url(../../public/image/me.png),
+        linear-gradient(180deg, $pink 0%, #8f8f8f 100%);
+      background-size: cover;
+      border: 1px solid $black;
+    }
+    .textTop {
+      width: 60%;
+      height: auto;
+      h1 {
+        font-size: 4rem;
+        font-weight: lighter;
+      }
+      .name {
+        margin: 2rem 0 0 2rem;
+        font-size: 1.6rem;
+        font-weight: lighter;
+        span {
+          margin-left: 2rem;
+          font-size: 2.4rem;
+          font-family: $subFont;
+        }
+      }
+      .schWrap {
+        display: flex;
+        margin: 1rem 0 0 2rem;
+        p {
+          font-size: 1.6rem;
+        }
+        .sch {
+          margin-left: 2rem;
+          font-size: 2rem;
+          font-family: $subFont;
+          span {
+            margin-left: 0.4rem;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .from {
+        margin: 1rem 0 0 2rem;
+        font-size: 1.6rem;
+        span {
+          margin-left: 2rem;
+          font-family: $subFont;
+          font-size: 2rem;
+        }
+      }
+      .birth {
+        margin: 1rem 0 0 2rem;
+        font-size: 1.6rem;
+        time {
+          margin-left: 2rem;
+          font-family: $subFont;
+          font-size: 2rem;
+        }
+      }
+      .graduation {
+        margin: 2rem 0 0 2rem;
+        font-size: 2.4rem;
+        color: $pink;
+      }
+    }
+  }
+  .about {
+    margin-top: 10rem;
+    text-align: center;
+    h2 {
+      font-size: 4.8rem;
+      margin-bottom: 1rem;
+      font-weight: lighter;
+    }
+    p {
+      font-family: $subFont;
+      font-size: 1.6rem;
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+  .skills {
+    width: 100%;
+    margin-top: 10rem;
+    h2 {
+      font-size: 4.8rem;
+      margin-bottom: 2rem;
+      font-weight: lighter;
+      text-align: center;
+    }
+    .skillsWrap {
+      width: 100%;
+      height: 12rem;
+      display: flex;
+      justify-content: space-evenly;
+      .engineer {
+        width: 40%;
+        // border: 1px solid tomato;
+        h3 {
+          margin-bottom: 1rem;
+          font-size: 2.4rem;
+          font-weight: lighter;
+        }
+        .engWrap {
+          display: flex;
+          flex-wrap: wrap;
+          p {
+            font-size: 2rem;
+            padding: 0.4rem 1.6rem;
+            margin: 0.4rem 0.4rem 0.4rem 0;
+            background-color: $bgBlur;
+            border: 2px solid $black;
+            border-radius: 1.6rem;
+          }
+        }
+      }
+      .software {
+        width: 40%;
+        // border: 1px solid tomato;
+        h3 {
+          margin-bottom: 1rem;
+          font-size: 2.4rem;
+          font-weight: lighter;
+          text-align: left;
+        }
+        .softWrap {
+          display: flex;
+          justify-content: center;
+          div {
+            width: 5rem;
+            height: 5rem;
+            margin-right: 1rem;
+            border: 2px solid $black;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+              font-size: 3.2rem;
+              padding-left: 0.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .myFav {
+    width: 100%;
+    margin-top: 10rem;
+    h2 {
+      text-align: center;
+      font-size: 4.8rem;
+      font-weight: lighter;
+    }
+    .childWrap {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-top: 5rem;
+      .favChild {
+        width: 40%;
+        display: flex;
+        margin-bottom: 2rem;
+        div {
+          width: 6rem;
+          height: 6rem;
+        }
+        p {
+          margin-left: 2rem;
+          font-size: 2.4rem;
+          span {
+            font-family: $subFont;
+            margin-left: 0.8rem;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .favChild:nth-child(1) > div {
+        background-image: url(../../public/image/ramen.png);
+        background-size: cover;
+      }
+      .favChild:nth-child(2) > div {
+        background-image: url(../../public/image/music.png);
+        background-size: cover;
+      }
+      .favChild:nth-child(3) > div {
+        background-image: url(../../public/image/paint.png);
+        background-size: cover;
+      }
+      .favChild:nth-child(4) > div {
+        background-image: url(../../public/image/movies.png);
+        background-size: cover;
+      }
+    }
+  }
 }
