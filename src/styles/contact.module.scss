@@ -12,6 +12,12 @@ html {
   position: relative;
   top: 0;
   left: 0;
+  .contactText {
+    text-align: center;
+    font-family: $subFont;
+    font-size: 1.6rem;
+    margin: 4rem 0;
+  }
   .to {
     width: 90%;
     display: flex;
@@ -20,6 +26,7 @@ html {
     margin: 0 auto 2rem;
     font-size: 2rem;
     p {
+      font-family: $font;
       width: 10%;
       text-align: end;
     }
@@ -40,6 +47,7 @@ html {
     margin: 0 auto 2rem;
     font-size: 2rem;
     p {
+      font-family: $font;
       width: 10%;
       text-align: end;
     }
