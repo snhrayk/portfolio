@@ -16,14 +16,16 @@ export default function Works() {
   return (
     <div className={styles.wrapper}>
       <header>
-        <h1>学校作品</h1>
-        {/* <p></p> */}
+        <h1>
+          <img src="../../image/portfolio-logo.png" alt="ポートフォリオロゴ" />
+        </h1>
+        <p></p>
       </header>
       <section className={styles.herstel}>
-        <div className={styles.imgArea}>
-          <img src="../../image/award.svg" alt="賞" />
-        </div>
-        <h2>herstel</h2>
+        <div className={styles.imgArea}></div>
+        <h2>
+          herstel<span></span>
+        </h2>
         <p className={styles.explain}>
           今子育てに奮闘中の主婦の方に向けた紅茶定期便サービス。
           子育ての疲れに効果的な紅茶をご用意しております。
@@ -45,7 +47,7 @@ export default function Works() {
           <button>詳細を見る</button>
         </div>
       </section>
-      {/* <section>
+      <section>
         <div className={styles.imgArea}></div>
         <h2>fave#</h2>
         <p className={styles.explain}>
@@ -58,9 +60,9 @@ export default function Works() {
       </section>
       <section>
         <div className={styles.imgArea}></div>
-        <h2>ゆるめ旅</h2>
+        <h2 className={styles.jpn}>ゆるめ旅</h2>
         <p className={styles.explain}>
-          景色を楽しみながら遠回りをして、目的地へ向かう新しいルート案内アプリ
+          景色を楽しみながら遠回りをして、目的地へ向かう新しいルート案内アプリ。
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年後期</p>
@@ -69,7 +71,7 @@ export default function Works() {
       </section>
       <section>
         <div className={styles.imgArea}></div>
-        <h2>キャンドルナイトポスター</h2>
+        <h2 className={styles.jpn}>キャンドルナイトポスター</h2>
         <p className={styles.explain}>中崎町キャンドルナイトのポスター制作。</p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年後期</p>
@@ -78,7 +80,7 @@ export default function Works() {
       </section>{" "}
       <section>
         <div className={styles.imgArea}></div>
-        <h2>名刺</h2>
+        <h2 className={styles.jpn}>名刺</h2>
         <p className={styles.explain}>
           自分の名刺をデザインして実際に印刷しました。
         </p>
@@ -86,7 +88,7 @@ export default function Works() {
           <p className={styles.workDate}>1年</p>
           <button>詳細を見る</button>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }

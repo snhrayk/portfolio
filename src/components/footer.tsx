@@ -14,15 +14,18 @@ export default function Footer() {
   //   }, 1000);
   //   return () => clearInterval(interval);
   // }, []);
-
   return (
     <div className={styles.borderTop}>
       <div className={styles.footerWrap}>
         <div className={styles.snsWrap}>
-          <a href="https://github.com/snhrayk">
+          <a href="https://github.com/snhrayk" target="_blank" rel="noreferrer">
             <img src="/image/github_icon.svg" alt="私のGitHub" />
           </a>
-          <a href="https://www.instagram.com/web.s7/">
+          <a
+            href="https://www.instagram.com/web.s7/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="/image/instagram_icon.svg" alt="私のInstagram" />
           </a>
         </div>
