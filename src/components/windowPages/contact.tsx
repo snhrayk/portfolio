@@ -1,24 +1,27 @@
 import styles from "../../styles/contact.module.scss";
 export default function Contact() {
+  const sendEmail = () => {
+    window.location.href = "mailto:ayaka21sunahara@gmail.com";
+  };
   return (
     <div className={styles.contactWrap}>
-      {/* <p className={styles.contactText}>
-        ご連絡等がございましたら、下記かまたは
-        ayaka21sunahara@gmail.comまでお願いいたします。
-      </p> */}
-      <div className={styles.to}>
-        <p>from:</p>
-        <input type="text" placeholder="" />
-      </div>
-      <div className={styles.subject}>
+      <div className={styles.titleWrap}>
         <p>subject:</p>
-        <input type="text" placeholder="" />
+        <p>お問い合わせについて</p>
       </div>
-      <div className={styles.msgArea}>
-        <textarea name="text" id="text"></textarea>
+      <div className={styles.titleWrap}>
+        <p>mail:</p>
+        <p>ayaka21sunahara@gmail.com</p>
+      </div>
+      <div className={styles.msg}>
+        <p>
+          ご連絡等がございましたら、以下のcontactボタンからお願いします。
+          <br />
+          <span>※contactボタンを押して頂くと、メールアプリが起動します。</span>
+        </p>
       </div>
       <div className={styles.btnWrap}>
-        <button>send</button>
+        <button onClick={sendEmail}>contact</button>
       </div>
     </div>
   );

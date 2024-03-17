@@ -7,84 +7,55 @@ html {
 .contactWrap {
   width: 100%;
   height: 74vh;
-  padding-top: 7rem;
+  padding-top: 4.2rem;
+  background-color: $contactBg;
   font-family: $font;
-  position: relative;
-  top: 0;
-  left: 0;
-  .contactText {
-    text-align: center;
-    font-family: $subFont;
-    font-size: 1.6rem;
-    margin: 4rem 0;
-  }
-  .to {
+  .titleWrap {
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto 2rem;
-    font-size: 2rem;
+    margin: 0 auto 1.6rem;
     p {
-      font-family: $font;
       width: 10%;
       text-align: end;
+      font-size: 2rem;
     }
-    input {
-      width: 90%;
-      background-color: $shadowLine;
+    p:nth-child(2) {
+      width: 92%;
+      background-color: $white;
       border: 1.5px solid $black;
       margin-left: 2%;
-      padding: 0.2rem 1rem;
+      padding: 0.4rem 1rem;
+      text-align: start;
+      font-size: 1.8rem;
       font-family: $subFont;
     }
   }
-  .subject {
+  .msg {
     width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto 2rem;
-    font-size: 2rem;
-    p {
-      font-family: $font;
-      width: 10%;
-      text-align: end;
-    }
-    input {
-      width: 90%;
-      background-color: $shadowLine;
-      border: 1.5px solid $black;
-      margin-left: 2%;
-      padding: 0.2rem 1rem;
-      font-family: $subFont;
-    }
-  }
-  .msgArea {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
     margin: 0 auto;
-    font-size: 2rem;
-    textarea {
+    p {
       width: 100%;
       height: 20rem;
       resize: vertical;
-      background-color: $shadowLine;
+      background-color: $white;
       border: 1.5px solid $black;
       padding: 1rem;
+      font-size: 2rem;
       font-family: $subFont;
+      span {
+        font-size: 1.6rem;
+      }
     }
   }
   .btnWrap {
     width: 100%;
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    // transform: translate(-50%, -50%);
+    margin-top: 4.2rem;
     button {
-      padding: 1rem 7rem;
+      padding: 1rem 5.6rem;
       background-color: $mainColor;
       font-size: 2rem;
       color: $white;
