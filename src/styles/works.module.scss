@@ -11,20 +11,24 @@ html {
   flex-wrap: wrap;
   color: $black;
   font-family: $subFont;
+  // background: url(../../public/image/bg-line.svg) repeat, $subColor;
   header {
     width: 100%;
-    height: 14vh;
+    height: 16vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0 0 0;
-    background-color: $subColor;
+    flex-direction: column;
+    background: url(../../public/image/bg-line.svg) repeat, $subColor;
+    img {
+      width: 10rem;
+      height: auto;
+      // border: 1px solid tomato;
+    }
     h1 {
-      img {
-        width: 10rem;
-        height: auto;
-        // border: 1px solid tomato;
-      }
+      font-size: 1.6rem;
+      font-weight: lighter;
+      font-family: $font;
     }
   }
   section {
@@ -33,12 +37,12 @@ html {
     padding: 4%;
     border-top: 2px solid $black;
     border-right: 2px solid $black;
-    // background-color: $worksBg;
+    background: url(../../public/image/bg-line.svg) repeat, $worksBg;
     .imgArea {
       width: 100%;
       height: 40vh;
-      background-color: $white;
       border: 2px solid $black;
+      background-color: $white;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -51,20 +55,21 @@ html {
       span {
         padding: 0.2rem 0.4rem;
         margin-left: 0.4rem;
-        border: 1px solid $pink;
+        // border: 1px solid $pink;
+        // border-radius: 3px;
+        background-color: $prizeBg;
         font-size: 1rem;
         font-weight: bold;
       }
     }
-    // .jpn {
-    //   font-size: 2rem;
-    //   font-weight: bold;
-    // }
     .explain {
       font-size: 1.2rem;
       margin-left: 1.4rem;
       margin-bottom: 2rem;
       height: 2.6rem;
+      span {
+        border-bottom: 1px solid $black;
+      }
     }
     .btmWrap {
       width: 100%;
@@ -79,6 +84,7 @@ html {
         justify-content: center;
         align-items: center;
         padding: 1rem 1rem 1rem 0.8rem;
+        background-color: $white;
         border: 2px solid $black;
         border-radius: 6px;
       }
@@ -105,6 +111,9 @@ html {
   }
   .candleNight > .imgArea {
     background-image: url("../../public/image/CN-poster.jpg");
+  }
+  .nameCard > .imgArea {
+    background-image: url("../../public/image/nameCard.png");
   }
   section:nth-child(odd) {
     border-right: none;

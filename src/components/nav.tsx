@@ -23,35 +23,28 @@ export default function Nav() {
 
   return (
     <nav>
-      {/* <section
-        className={styles.navChild}
-        onDoubleClick={() => handleSectionDoubleClick(0)} // Aboutセクション
-      >
-        <img
-          src="./image/about.png"
-          alt="希望職種や勉強中の言語・アプリについて"
-        />
-        <h1>About</h1>
-      </section> */}
       <section
         className={styles.navChild}
         onDoubleClick={() => handleSectionDoubleClick(0)} // 必要に応じてインデックスを調整
       >
-        <img src="./image/profile.png" alt="私の自己紹介" />
+        <div className={styles.icon}></div>
+        {/* <img src="./image/profile.png" alt="私の自己紹介" /> */}
         <h1>Profile</h1>
       </section>
       <section
         className={styles.navChild}
         onDoubleClick={() => handleSectionDoubleClick(1)}
       >
-        <img src="./image/works.png" alt="作品一覧" />
+        <div className={styles.icon}></div>
+        {/* <img src="./image/works.png" alt="作品一覧" /> */}
         <h1>Works</h1>
       </section>
       <section
         className={styles.navChild}
         onDoubleClick={() => handleSectionDoubleClick(2)}
       >
-        <img src="./image/contact.png" alt="私の連絡先・SNS" />
+        <div className={styles.icon}></div>
+        {/* <img src="./image/contact.png" alt="私の連絡先・SNS" /> */}
         <h1>Contact</h1>
       </section>
       {windows.map(
