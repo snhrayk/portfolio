@@ -39,15 +39,22 @@ html {
       height: 40vh;
       background-color: $white;
       border: 2px solid $black;
-      position: relative;
-      top: 0;
-      right: 0;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
     h2 {
       margin: 1rem 0 0.2rem 1rem;
       font-size: 2.4rem;
       font-family: $font;
       font-weight: lighter;
+      span {
+        padding: 0.2rem 0.4rem;
+        margin-left: 0.4rem;
+        border: 1px solid $pink;
+        font-size: 1rem;
+        font-weight: bold;
+      }
     }
     // .jpn {
     //   font-size: 2rem;
@@ -92,13 +99,12 @@ html {
   }
   .herstel > .imgArea {
     background-image: url("../../public/image/herstel.png");
-    background-position: center;
-    background-size: cover;
   }
   .florita > .imgArea {
     background-image: url("../../public/image/florita_thumbnail2.png");
-    background-position: left;
-    background-size: cover;
+  }
+  .candleNight > .imgArea {
+    background-image: url("../../public/image/CN-poster.jpg");
   }
   section:nth-child(odd) {
     border-right: none;

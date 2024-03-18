@@ -24,7 +24,7 @@ export default function Works() {
       <section className={styles.herstel}>
         <div className={styles.imgArea}></div>
         <h2>
-          herstel<span></span>
+          herstel<span>敢闘賞受賞</span>
         </h2>
         <p className={styles.explain}>
           今子育てに奮闘中の主婦の方に向けた紅茶定期便サービス。
@@ -69,9 +69,12 @@ export default function Works() {
           <button>詳細を見る</button>
         </div>
       </section>
-      <section>
+      <section className={styles.candleNight}>
         <div className={styles.imgArea}></div>
-        <h2 className={styles.jpn}>キャンドルナイトポスター</h2>
+        <h2 className={styles.jpn}>
+          キャンドルナイトポスター
+          <span>準グランプリ受賞</span>
+        </h2>
         <p className={styles.explain}>中崎町キャンドルナイトのポスター制作。</p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年後期</p>
