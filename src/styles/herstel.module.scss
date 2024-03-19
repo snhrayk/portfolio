@@ -6,91 +6,169 @@ html {
 
 .container {
   width: 100%;
-  height: 100vh;
-  // display: grid;
-  // grid-template-columns: 25% 75%;
-  // grid-template-rows: 12vh auto 1fr;
+  height: 74vh;
   color: $black;
-  font-family: $subFont; // grid-template-areas:
-  //   "header header"
-  //   "list content";
+  font-family: $subFont;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 12vh 62vh;
   header {
     width: 100%;
     height: 12vh;
-    padding: 0.5rem 0 0 2rem;
     background-color: $subColor;
-    // border: 1px solid tomato;
-    // grid-area: header;
-    // grid-column: 1 / 3;
-    // grid-row: 1 / 2;
+    border-bottom: 2px solid $black;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
     h1 {
+      width: 100%;
+      height: 100%;
       display: flex;
+      justify-content: center;
       align-items: center;
-      font-size: 2rem;
-      font-family: $font;
       img {
-        width: 10rem;
+        width: 10%;
         height: auto;
-        margin-right: 1rem;
       }
     }
   }
-  .flex {
-    width: 100%;
-    height: 88vh;
-    display: flex;
-    .worksList {
-      width: 20%;
-      background-color: $worksBg;
-      // grid-area: list;
-      // grid-column: 1 / 2;
-      // grid-row: 2 / 3;
-      // border: 1px solid tomato;
-      font-family: $font;
-      text-align: center;
-      div > p:first-child {
-        padding-left: 1rem;
-        font-size: 1.2rem;
-        font-weight: bold;
-        border-top: 1px solid $black;
-        // border-bottom: 1px solid $black;
-      }
-      div:nth-child(2) {
-        margin-bottom: 3rem;
-      }
-      h2 {
-        padding: 1.2rem 0;
-        font-size: 1.6rem;
-        // background-color: $mainColor;
-        // color: $white;
-      }
-      p {
-        padding: 1rem 0;
-        font-size: 1.2rem;
-      }
-      .selected {
-        font-weight: bold;
-        color: $pink;
-      }
-    }
-    .herstelWrap {
-      width: 80%;
-      margin: 4%;
+  .worksList {
+    background-color: $worksNav;
+    // background: url(../../public/image/bg-line.svg) repeat, $worksNav;
+    font-family: $font;
+    border-right: 2px solid $black;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    // border: 1px solid tomato;
+    h2 {
+      width: 100%;
+      height: 8vh;
       display: flex;
-      justify-content: space-between;
-      // grid-column: 2 / 3;
-      // grid-row: 2 / 3;
-      // grid-area: content;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid $black;
+      font-size: 2rem;
+    }
+    p {
+      width: 100%;
+      height: 6vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6rem;
+    }
+    p:nth-child(5),
+    :nth-child(6),
+    :nth-child(7) {
+      font-size: 1.4rem;
+    }
+    p:not(.selected):hover {
+      background-color: $bgBlur;
+    }
+    .selected {
+      font-weight: bold;
+      color: $pink;
+    }
+  }
+  .herstelWrap {
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    overflow: auto;
+    justify-content: space-between;
+    background-color: $white;
+    // background: url(../../public/image/bg-line.svg) repeat, $white;
+    // border: 1px solid tomato;
+    .imgWrap {
+      width: 44%;
+      padding: 2%;
+      border: 1px solid tomato;
+    }
+    .data {
+      width: 56%;
+      padding: 2%;
       // border: 1px solid tomato;
-      .imgWrap {
-        width: 44%;
-        height: 40vh;
-        background-color: $gray;
+      .dataTop {
+        display: flex;
+        align-items: end;
+        column-gap: 0.8rem;
+        .prize {
+          background-color: $white;
+          border: 1px solid $pink;
+          border-radius: 3px;
+          font-size: 1.2rem;
+          padding: 0 0.4rem;
+        }
+        :not(.prize) {
+          font-size: 1.2rem;
+        }
       }
-      .imgDetail {
-        width: 52%;
-        height: 40vh;
-        background-color: $gray;
+      h3 {
+        margin: 0.6rem 0 1rem 0.4rem;
+        font-family: $font;
+        font-weight: lighter;
+        font-size: 4.6rem;
+        span {
+          margin-left: 0.8rem;
+          font-size: 1.6rem;
+        }
+      }
+      .mainExplain {
+        margin-left: 1rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        span {
+          border-bottom: 1px solid $black;
+        }
+      }
+      .subExplain {
+        font-size: 1rem;
+        margin-top: 0.4rem;
+        margin-left: 1.4rem;
+      }
+      .date {
+        margin: 4.8rem 0 1rem 1rem;
+        display: flex;
+        align-items: center;
+        font-size: 2.4rem;
+        font-family: $font;
+        // font-weight: bold;
+        span {
+          font-family: $subFont;
+          margin-right: 0.2rem;
+        }
+      }
+      .btnWrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .term {
+          width: 20%;
+          font-size: 1.2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid $black;
+          border-radius: 4px;
+          background-color: $white;
+        }
+        .siteBtn {
+          width: 78%;
+          border: 2px solid $black;
+          border-radius: 4px;
+          text-align: center;
+          background-color: $mainColor;
+          a {
+            padding: 1rem 0;
+            display: block;
+            text-decoration: none;
+            color: $white;
+            font-size: 1.2rem;
+            font-family: $font;
+          }
+        }
+        .siteBtn:hover {
+          background-color: $pink;
+        }
       }
     }
   }
