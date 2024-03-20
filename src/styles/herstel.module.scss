@@ -32,8 +32,8 @@ html {
     }
   }
   .worksList {
-    background-color: $worksNav;
-    // background: url(../../public/image/bg-line.svg) repeat, $worksNav;
+    // background-color: $worksNav;
+    background: url(../../public/image/bg-line.svg) repeat, $worksNav;
     font-family: $font;
     border-right: 2px solid $black;
     grid-column: 1 / 2;
@@ -75,8 +75,8 @@ html {
     grid-row: 2 / 3;
     overflow: auto;
     justify-content: space-between;
-    background-color: $white;
-    // background: url(../../public/image/bg-line.svg) repeat, $white;
+    // background-color: $white;
+    background: url(../../public/image/bg-line.svg) repeat, $white;
     // border: 1px solid tomato;
     .imgWrap {
       width: 44%;
@@ -85,7 +85,7 @@ html {
     }
     .data {
       width: 56%;
-      padding: 2%;
+      padding: 4% 2% 0 2%;
       // border: 1px solid tomato;
       .dataTop {
         display: flex;
@@ -103,47 +103,80 @@ html {
         }
       }
       h3 {
-        margin: 0.6rem 0 1rem 0.4rem;
+        margin: 0.6rem 0 0 0.6rem;
         font-family: $font;
         font-weight: lighter;
-        font-size: 4.6rem;
+        font-size: 4rem;
         span {
-          margin-left: 0.8rem;
+          margin-left: 0.6rem;
           font-size: 1.6rem;
         }
       }
-      .mainExplain {
-        margin-left: 1rem;
-        font-size: 1.3rem;
+      .date {
+        margin: 0rem 0 0 0.4rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        font-family: $subFont;
         font-weight: bold;
+      }
+      .mainExplain {
+        margin: 0.8rem 0 0 0.4rem;
+        font-size: 1.4rem;
+        // font-weight: bold;
         span {
           border-bottom: 1px solid $black;
         }
       }
-      .subExplain {
-        font-size: 1rem;
-        margin-top: 0.4rem;
-        margin-left: 1.4rem;
-      }
-      .date {
-        margin: 4.8rem 0 1rem 1rem;
-        display: flex;
-        align-items: center;
-        font-size: 2.4rem;
+      .used {
+        margin: 0.4rem 0 0 0.6rem;
         font-family: $font;
-        // font-weight: bold;
-        span {
-          font-family: $subFont;
-          margin-right: 0.2rem;
-        }
+        font-size: 1.2rem;
       }
+      // .usedWrap {
+      //   display: flex;
+      //   margin: 1.6rem 0 0 0.6rem;
+      // .used {
+      //   width: 3.2rem;
+      //   height: 3.2rem;
+      //   margin-right: 0.6rem;
+      //   border: 1px solid $black;
+      //   border-radius: 3px;
+      //   background-position: center;
+      //   background-size: cover;
+      //   background-color: $white;
+      // }
+      // .used:nth-child(1) {
+      //   background-image: url(../../public/image/html.svg);
+      // }
+      // .used:nth-child(2) {
+      //   background-image: url(../../public/image/css.svg);
+      // }
+      // .usedApp {
+      //   width: 3.2rem;
+      //   height: 3.2rem;
+      //   margin-right: 0.6rem;
+      //   border: 1px solid $black;
+      //   border-radius: 3px;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   background-color: $white;
+      //   p {
+      //     font-family: $font;
+      //     font-size: 2.4rem;
+      //     padding-left: 0.2rem;
+      //   }
+      // }
+      // }
       .btnWrap {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        margin-top: 4.8rem;
         .term {
           width: 20%;
-          font-size: 1.2rem;
+          font-size: 1.4rem;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -162,13 +195,18 @@ html {
             display: block;
             text-decoration: none;
             color: $white;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             font-family: $font;
           }
         }
         .siteBtn:hover {
           background-color: $pink;
         }
+      }
+      .subExplain {
+        font-size: 1rem;
+        margin-top: 0.4rem;
+        margin-left: 1.4rem;
       }
     }
   }

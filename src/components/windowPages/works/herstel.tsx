@@ -28,31 +28,38 @@ export default function Herstel() {
           <h3>
             herstel<span>ハーステル</span>
           </h3>
+          <p className={styles.date}>$23.04~23.08</p>
           <p className={styles.mainExplain}>
             今子育てに奮闘中の主婦の方に向けた<span>紅茶定期便サービス</span>。
             <br />
             子育ての疲れに効果的な紅茶をご用意しております。
           </p>
-          <p className={styles.subExplain}>
-            紅茶×定期便をテーマに、企画からデザイン・コーディングまで個人で制作しました。
-            初めての制作でしたが、自分が考えるものを形にする楽しさを知ることができました。
+          <p className={styles.used}>
+            html / css / Xd / Illustrator / Photoshop
           </p>
-          <p className={styles.date}>
-            <span>$</span>2023.04<span>~</span>2023.08
-          </p>
+          {/* <div className={styles.usedWrap}>
+            <div className={styles.used}></div>
+            <div className={styles.used}></div>
+            <div className={styles.usedApp}>
+              <p>Xd</p>
+            </div>{" "}
+            <div className={styles.usedApp}>
+              <p>Ps</p>
+            </div>{" "}
+            <div className={styles.usedApp}>
+              <p>Ai</p>
+            </div>
+          </div> */}
           <div className={styles.btnWrap}>
             <p className={styles.term}>1年前期</p>
             <p className={styles.siteBtn}>
               <a href="#">サイトを見る</a>
             </p>
           </div>
-          {/* <p>使用言語：HTML, CSS</p> */}
-          {/* <div>
-            使用ツール：
-            <div className={styles.tools}></div>
-            <div className={styles.tools}></div>
-            <div className={styles.tools}></div>
-          </div> */}
+          <p className={styles.subExplain}>
+            紅茶×定期便をテーマに、企画からデザイン・コーディングまで個人で制作しました。
+            初めての制作でしたが、自分が考えるものを形にする楽しさを知ることができました。
+          </p>
         </div>
       </div>
     </div>
