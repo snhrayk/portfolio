@@ -22,11 +22,11 @@ export default function Works() {
       <section className={styles.herstel}>
         <div className={styles.imgArea}></div>
         <h2>
-          herstel<span>敢闘賞受賞✨</span>
+          herstel<span>敢闘賞受賞</span>
         </h2>
         <p className={styles.explain}>
           今子育てに奮闘中の主婦の方に向けた紅茶定期便サービス。
-          子育ての疲れに効果的な紅茶をご用意しております。{" "}
+          子育ての疲れに効果的な紅茶をご用意しております。
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年前期</p>
@@ -49,7 +49,7 @@ export default function Works() {
         <div className={styles.imgArea}></div>
         <h2>fave#</h2>
         <p className={styles.explain}>
-          洋楽好きに向けたコミュニティWebアプリ。
+          洋楽好きに向けたコミュニティWebアプリ。自分の好きな洋楽アーティストごとに作られたコミュニティスペースで、他のユーザーと交流できます。
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年後期</p>
@@ -59,10 +59,10 @@ export default function Works() {
       <section className={styles.yurumetabi}>
         <div className={styles.imgArea}></div>
         <h2 className={styles.jpn}>
-          ゆるめ旅<span>第7回専門学校HTML5作品アワード入選✨</span>
+          ゆるめ旅<span>第7回専門学校HTML5作品アワード入選</span>
         </h2>
         <p className={styles.explain}>
-          景色を楽しみながら遠回りをして、目的地へ向かう新しいルート案内アプリ。
+          遠回りをして目的地の着くルート案内機能と見つけたスポットを撮影して共有できるスポット共有機能を合わせた新しいルート案内アプリです。
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年後期</p>
@@ -73,10 +73,10 @@ export default function Works() {
         <div className={styles.imgArea}></div>
         <h2 className={styles.jpn}>
           キャンドルナイトポスター
-          <span>準グランプリ受賞✨</span>
+          <span>準グランプリ受賞</span>
         </h2>
         <p className={styles.explain}>
-          毎年中崎町で開催されるキャンドルナイトのポスターを制作しました。
+          毎年中崎町で開催されるキャンドルナイト。そのイベントのポスターを制作しました。
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年後期</p>
