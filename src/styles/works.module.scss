@@ -39,7 +39,7 @@ html {
     border-right: 2px solid $black;
     .imgArea {
       width: 100%;
-      height: 40vh;
+      aspect-ratio: 1.414 / 1;
       border: 2px solid $black;
       background-color: $white;
       background-position: center;
@@ -55,8 +55,8 @@ html {
         padding: 0.2rem 0.4rem;
         margin-left: 0.4rem;
         // border: 1px solid $pink;
-        // border-radius: 3px;
-        // background-color: $prizeBg;
+        border-radius: 3px;
+        background-color: $prizeBg;
         font-size: 1rem;
         font-weight: bold;
       }
@@ -105,7 +105,13 @@ html {
     background-image: url("../../public/image/herstel.png");
   }
   .florita > .imgArea {
-    background-image: url("../../public/image/florita_thumbnail2.png");
+    background-image: url("../../public/image/florita.png");
+  }
+  .faveTag > .imgArea {
+    background-image: url("../../public/image/faveTag.png");
+  }
+  .yurumetabi > .imgArea {
+    background-image: url("../../public/image/yurumetabi.png");
   }
   .candleNight > .imgArea {
     background-image: url("../../public/image/CN-poster.jpg");

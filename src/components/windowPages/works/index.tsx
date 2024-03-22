@@ -45,7 +45,7 @@ export default function Works() {
           <button>詳細を見る</button>
         </div>
       </section>
-      <section>
+      <section className={styles.faveTag}>
         <div className={styles.imgArea}></div>
         <h2>fave#</h2>
         <p className={styles.explain}>
@@ -56,7 +56,7 @@ export default function Works() {
           <button>詳細を見る</button>
         </div>
       </section>
-      <section>
+      <section className={styles.yurumetabi}>
         <div className={styles.imgArea}></div>
         <h2 className={styles.jpn}>
           ゆるめ旅<span>第7回専門学校HTML5作品アワード入選✨</span>
