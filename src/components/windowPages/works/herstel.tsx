@@ -18,7 +18,17 @@ export default function Herstel() {
         <p>名刺</p>
       </div>
       <div className={styles.herstelWrap}>
-        <div className={styles.imgWrap}></div>
+        <div className={styles.slideWrap}>
+          <div className={styles.imgWrap}>
+            <img
+              className={styles.herstelImg}
+              src="../../../image/herstel.png"
+              alt="herstel全体"
+            />
+            <div className={styles.back}></div>
+            <div className={styles.next}></div>
+          </div>
+        </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>
             <p className={styles.prize}>+E展 敢闘賞受賞作品</p>

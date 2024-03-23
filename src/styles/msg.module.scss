@@ -7,7 +7,8 @@ html {
 
 .msgBox {
   width: 28vw;
-  height: 36vh;
+  aspect-ratio: 4 / 3;
+  // height: 36vh;
   border-top: 3px solid $white;
   border-left: 3px solid $white;
   border-bottom: 3px solid $shadowLine;

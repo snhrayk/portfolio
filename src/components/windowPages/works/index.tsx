@@ -87,7 +87,7 @@ export default function Works() {
         <div className={styles.imgArea}></div>
         <h2 className={styles.jpn}>名刺</h2>
         <p className={styles.explain}>
-          1年前期と1年後期に制作した名刺です。デザインから印刷まで全て自分で行いました。
+          1年前期と1年後期に制作した名刺。デザインから印刷まで全て自分で行いました。
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年</p>
