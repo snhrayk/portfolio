@@ -5,8 +5,9 @@ html {
 }
 
 .windowWrap {
-  width: 70vw;
+  // width: 70vw;
   height: 80vh;
+  aspect-ratio: 16 / 9;
   border: 1px solid $shadowLine;
   border-top: 4px solid $white;
   border-left: 4px solid $white;
