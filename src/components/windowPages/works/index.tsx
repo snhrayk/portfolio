@@ -1,16 +1,56 @@
 import { useState } from "react";
 import styles from "../../../styles/works.module.scss";
 import Herstel from "./herstel";
+import Florita from "./florita";
+import FaveTag from "./faveTag";
+import Yurumetabi from "./yurumetabi";
+import CandleNight from "./candleNight";
+import NameCard from "./nameCard";
 
 export default function Works() {
   const [showHerstel, setShowHerstel] = useState(false);
+  const [showFlorita, setShowFlorita] = useState(false);
+  const [showFaveTag, setShowFaveTag] = useState(false);
+  const [showYurumetabi, setShowYurumetabi] = useState(false);
+  const [showCandleNight, setShowCandleNight] = useState(false);
+  const [showNameCard, setShowNameCard] = useState(false);
 
   const handleShowHerstel = () => {
     setShowHerstel(true);
   };
+  const handleShowFlorita = () => {
+    setShowFlorita(true);
+  };
+  const handleShowFaveTag = () => {
+    setShowFaveTag(true);
+  };
+  const handleShowYurumetabi = () => {
+    setShowYurumetabi(true);
+  };
+  const handleShowCandleNight = () => {
+    setShowCandleNight(true);
+  };
+  const handleShowNameCard = () => {
+    setShowNameCard(true);
+  };
 
   if (showHerstel) {
     return <Herstel />;
+  }
+  if (showFlorita) {
+    return <Florita />;
+  }
+  if (showFaveTag) {
+    return <FaveTag />;
+  }
+  if (showYurumetabi) {
+    return <Yurumetabi />;
+  }
+  if (showCandleNight) {
+    return <CandleNight />;
+  }
+  if (showNameCard) {
+    return <NameCard />;
   }
 
   return (
@@ -42,7 +82,7 @@ export default function Works() {
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>夏期講習</p>
-          <button>詳細を見る</button>
+          <button onClick={handleShowFlorita}>詳細を見る</button>
         </div>
       </section>
       <section className={styles.faveTag}>
@@ -53,7 +93,7 @@ export default function Works() {
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年後期</p>
-          <button>詳細を見る</button>
+          <button onClick={handleShowFaveTag}>詳細を見る</button>
         </div>
       </section>
       <section className={styles.yurumetabi}>
@@ -66,7 +106,7 @@ export default function Works() {
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年後期</p>
-          <button>詳細を見る</button>
+          <button onClick={handleShowYurumetabi}>詳細を見る</button>
         </div>
       </section>
       <section className={styles.candleNight}>
@@ -80,7 +120,7 @@ export default function Works() {
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年後期</p>
-          <button>詳細を見る</button>
+          <button onClick={handleShowCandleNight}>詳細を見る</button>
         </div>
       </section>{" "}
       <section className={styles.nameCard}>
@@ -91,7 +131,7 @@ export default function Works() {
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>1年</p>
-          <button>詳細を見る</button>
+          <button onClick={handleShowNameCard}>詳細を見る</button>
         </div>
       </section>
     </div>

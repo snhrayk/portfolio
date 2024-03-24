@@ -32,6 +32,7 @@ nav {
     }
   }
   .navChild:hover {
+    cursor: pointer;
     .icon {
       background-color: $bgBlur;
       border-radius: 4px;

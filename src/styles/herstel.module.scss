@@ -28,6 +28,7 @@ html {
       img {
         width: 10%;
         height: auto;
+        cursor: pointer;
       }
     }
   }
@@ -63,6 +64,7 @@ html {
     }
     p:not(.selected):hover {
       background-color: $bgBlur;
+      cursor: pointer;
     }
     .selected {
       font-weight: bold;
@@ -80,15 +82,15 @@ html {
     // border: 1px solid tomato;
     .slideWrap {
       width: 50%;
-      padding: 2%;
-      // border: 1px solid tomato;
+      padding: 4% 2% 0 2%;
       .imgWrap {
         width: 100%;
-        height: auto;
         aspect-ratio: 1.4 / 1;
         position: relative;
         top: 0;
         left: 0;
+        right: 0;
+        // border: 1px solid tomato;
         // text-align: center;
         // background-color: $pink;
         .herstelImg {
@@ -97,24 +99,36 @@ html {
           object-fit: cover;
         }
         .back {
-          width: 8vw;
+          width: 2.4vw;
           aspect-ratio: 1 / 1;
           position: absolute;
-          left: 0;
           top: 50%;
+          left: 2%;
+          transform: translate(0, -50%);
           background-image: url(../../public/image/back.svg);
+          background-size: cover;
+          background-position: center;
+          // border: 1px solid tomato;
           cursor: pointer;
         }
         .next {
-          width: 8vw;
+          width: 2.4vw;
           aspect-ratio: 1 / 1;
           position: absolute;
-          right: 0;
           top: 50%;
-          background-image: url(../../public/image/back.svg);
-          transform: rotate(180deg);
+          right: 2%;
+          transform: translate(0, -50%);
+          background-image: url(../../public/image/next.svg);
+          background-size: cover;
+          background-position: center;
+          // border: 1px solid tomato;
           cursor: pointer;
         }
+      }
+      p {
+        padding: 0.4rem 0;
+        text-align: center;
+        font-size: 1.2rem;
       }
     }
     .data {
@@ -137,7 +151,7 @@ html {
         }
       }
       h3 {
-        margin: 0.6rem 0 0 0.6rem;
+        margin: 0.2rem 0 0 0.6rem;
         font-family: $font;
         font-weight: lighter;
         font-size: 4rem;
@@ -156,53 +170,55 @@ html {
       }
       .mainExplain {
         margin: 0.8rem 0 0 0.4rem;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         // font-weight: bold;
         span {
           border-bottom: 1px solid $black;
         }
       }
-      .used {
-        margin: 0.4rem 0 0 0.6rem;
-        font-family: $font;
-        font-size: 1.2rem;
+      // .subExplain {
+      //   font-size: 1rem;
+      //   margin-top: 0.4rem;
+      //   margin-left: 1rem;
+      // }
+      .usedWrap {
+        display: flex;
+        margin: 0.6rem 0 0 0.4rem;
+        .used {
+          width: 3.2rem;
+          height: 3.2rem;
+          margin-right: 0.6rem;
+          // border: 1px solid $black;
+          border-radius: 3px;
+          background-position: center;
+          background-size: cover;
+          background-color: $white;
+        }
+        .used:nth-child(1) {
+          background-image: url(../../public/image/html.svg);
+          background-color: $html;
+        }
+        .used:nth-child(2) {
+          background-image: url(../../public/image/css.svg);
+          background-color: $css;
+        }
+        .usedApp {
+          width: 3.2rem;
+          height: 3.2rem;
+          margin-right: 0.6rem;
+          border: 1px solid $black;
+          border-radius: 3px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $white;
+          p {
+            font-family: $font;
+            font-size: 2.4rem;
+            padding-left: 0.2rem;
+          }
+        }
       }
-      // .usedWrap {
-      //   display: flex;
-      //   margin: 1.6rem 0 0 0.6rem;
-      // .used {
-      //   width: 3.2rem;
-      //   height: 3.2rem;
-      //   margin-right: 0.6rem;
-      //   border: 1px solid $black;
-      //   border-radius: 3px;
-      //   background-position: center;
-      //   background-size: cover;
-      //   background-color: $white;
-      // }
-      // .used:nth-child(1) {
-      //   background-image: url(../../public/image/html.svg);
-      // }
-      // .used:nth-child(2) {
-      //   background-image: url(../../public/image/css.svg);
-      // }
-      // .usedApp {
-      //   width: 3.2rem;
-      //   height: 3.2rem;
-      //   margin-right: 0.6rem;
-      //   border: 1px solid $black;
-      //   border-radius: 3px;
-      //   display: flex;
-      //   justify-content: center;
-      //   align-items: center;
-      //   background-color: $white;
-      //   p {
-      //     font-family: $font;
-      //     font-size: 2.4rem;
-      //     padding-left: 0.2rem;
-      //   }
-      // }
-      // }
       .btnWrap {
         width: 100%;
         display: flex;
@@ -236,11 +252,6 @@ html {
         .siteBtn:hover {
           background-color: $pink;
         }
-      }
-      .subExplain {
-        font-size: 1rem;
-        margin-top: 0.4rem;
-        margin-left: 1.4rem;
       }
     }
   }

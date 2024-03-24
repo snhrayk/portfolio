@@ -16,6 +16,9 @@ html {
   align-items: center;
   background-color: $shadowLine;
 }
+.closeBtn:hover {
+  cursor: pointer;
+}
 // クリックしたとき用
 .closeBtn:active {
   background-color: $gray;
