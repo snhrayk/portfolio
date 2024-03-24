@@ -32,7 +32,7 @@ export default function Window(props: any) {
         </div>
       </div>
       <div className={styles.pageArea}>
-        <Profile />
+        {/* <Profile /> */}
         {/* <Works /> */}
         {/* <Herstel /> */}
         {/* <Contact /> */}
