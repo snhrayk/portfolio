@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../../../styles/herstel.module.scss";
 import Florita from "./florita";
 import FaveTag from "./faveTag";
@@ -6,6 +6,7 @@ import Yurumetabi from "./yurumetabi";
 import CandleNight from "./candleNight";
 import NameCard from "./nameCard";
 import Works from ".";
+// import Splide from "@splidejs/splide";
 
 export default function Herstel() {
   const [showWorks, setShowWorks] = useState(false);
@@ -15,7 +16,6 @@ export default function Herstel() {
   const [showYurumetabi, setShowYurumetabi] = useState(false);
   const [showCandleNight, setShowCandleNight] = useState(false);
   const [showNameCard, setShowNameCard] = useState(false);
-  const [slideCount, setSlideCount] = useState(0);
 
   const handleShowWorks = () => {
     setShowWorks(true);
@@ -61,24 +61,6 @@ export default function Herstel() {
     return <NameCard />;
   }
 
-  // スライドショー
-  const images = ["../../../image/herstel.png", "../../../image/CN-poster.png"];
-
-  const backBtn = () => {
-    setSlideCount(
-      (prevCount) => (prevCount - 1 + images.length) % images.length
-    );
-  };
-  const nextBtn = () => {
-    setSlideCount((prevCount) => (prevCount + 1) % images.length);
-  };
-
-  // const page = document.createElement("p");
-  // page.style.color = "lightgray";
-
-  // const imgWrap = document.querySelector("imgWrap");
-  // imgWrap.insertBefore(p, img.nextElementSibling);
-
   return (
     <div className={styles.container}>
       <header>
@@ -95,20 +77,29 @@ export default function Herstel() {
         <p onClick={handleShowCandleNight}>キャンドルナイトポスター</p>
         <p onClick={handleShowNameCard}>名刺</p>
       </div>
-      {/* <WorksList /> */}
       <div className={styles.herstelWrap}>
-        <div className={styles.slideWrap}>
-          <div className={styles.imgWrap}>
-            <img
-              className={styles.herstelImg}
-              src={images[slideCount]}
-              id="slide_image"
-              alt={`Slide ${slideCount + 1}`}
-            />
-            <div className={styles.back} onClick={backBtn}></div>
-            <div className={styles.next} onClick={nextBtn}></div>
+        <div className={styles.herstelSliderWrap}>
+          {/* <div
+            id="thumbnail-carousel"
+            className={styles.thumbnailSlider}
+            aria-label="サムネイルスライダー。各サムネイルをクリックすると、メインのスライダーが切り替わります"
+          >
+            <div className={styles.thumbnailWrap}>
+              <ul className={styles.thumbnails}>
+                <li className={styles.thumbnailImg}>
+                  <img src="../../../image/herstel.png" alt="作品全体" />
+                </li>
+                <li className={styles.thumbnailImg}>
+                  <img src="../../../image/florita.png" alt="作品全体" />
+                </li>
+                <li className={styles.thumbnailImg}>
+                  <img src="../../../image/faveTag.png" alt="作品全体" />
+                </li>
+              </ul>
+            </div>
           </div>
-          <p>作品全体</p>
+          <div className={styles.back} onClick={backBtn}></div>
+          <div className={styles.next} onClick={nextBtn}></div> */}
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>
@@ -138,15 +129,18 @@ export default function Herstel() {
               <p>Ai</p>
             </div>
           </div>
-
-          {/* <p className={styles.subExplain}>
-            紅茶×定期便をテーマに、企画からデザイン・コーディングまで個人で制作しました。
-            初めての制作でしたが、自分が考えるものを形にする楽しさを知ることができました。
-          </p> */}
           <div className={styles.btnWrap}>
             <p className={styles.term}>1年前期</p>
             <p className={styles.siteBtn}>
               <a href="#">サイトを見る</a>
+            </p>
+          </div>
+          <div>
+            <h4>制作感想</h4>
+            <p className={styles.subExplain}>
+              紅茶×定期便をテーマに、企画からデザイン・コーディングまで個人で制作しました。
+              初めての制作でしたが、自分が考えるものを形にする楽しさを知ることができました。
+              今作品を振り返ってみると、webサイトの文字の大きさや写真のチョイス、画像の画質など改善点を多く見つけることができるため、成長を感じます。
             </p>
           </div>
         </div>

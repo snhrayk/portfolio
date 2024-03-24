@@ -78,7 +78,7 @@ export default function Works() {
         <h2>florita</h2>
         <p className={styles.explain}>
           女性に向けた服・コスメのランダムショッピング通販アプリ。
-          初めてのチーム制作。
+          『女性が買い物中に学ぶ』をテーマに2週間で制作しました。{" "}
         </p>
         <div className={styles.btmWrap}>
           <p className={styles.workDate}>夏期講習</p>

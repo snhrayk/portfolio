@@ -7,6 +7,8 @@ import Profile from "./windowPages/profile";
 import Works from "./windowPages/works";
 import Herstel from "./windowPages/works/herstel";
 import Contact from "./windowPages/contact";
+import Florita from "./windowPages/works/florita";
+import FaveTag from "./windowPages/works/faveTag";
 
 export default function Window(props: any) {
   const renderContent = () => {
@@ -33,8 +35,10 @@ export default function Window(props: any) {
       </div>
       <div className={styles.pageArea}>
         {/* <Profile /> */}
-        <Works />
+        {/* <Works /> */}
         {/* <Herstel /> */}
+        {/* <Florita /> */}
+        {/* <FaveTag /> */}
         {/* <Contact /> */}
         {renderContent()}
       </div>

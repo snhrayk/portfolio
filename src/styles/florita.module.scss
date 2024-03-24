@@ -189,7 +189,6 @@ html {
           width: 3.2rem;
           height: 3.2rem;
           margin-right: 0.6rem;
-          // border: 1px solid $black;
           border-radius: 3px;
           background-position: center;
           background-size: cover;
@@ -200,8 +199,12 @@ html {
           background-color: $html;
         }
         .used:nth-child(2) {
-          background-image: url(../../public/image/css.svg);
-          background-color: $css;
+          background-image: url(../../public/image/sass.svg);
+          background-color: $scss;
+        }
+        .used:nth-child(5) {
+          background-image: url(../../public/image/works-figma.svg);
+          border: 1px solid $figma;
         }
         .usedApp {
           width: 3.2rem;
@@ -219,13 +222,10 @@ html {
           }
         }
         .usedApp:nth-child(3) {
-          border: 1px solid $xd;
+          border: 1px solid $ai;
         }
         .usedApp:nth-child(4) {
-          border: 1px solid $ps;
-        }
-        .usedApp:nth-child(5) {
-          border: 1px solid $ai;
+          border: 1px solid $xd;
         }
       }
       .btnWrap {
