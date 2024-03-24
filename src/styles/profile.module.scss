@@ -17,13 +17,13 @@ html {
     aspect-ratio: 1.618 / 1;
     margin: 2% auto 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: rgba(256, 256, 256, 0.8);
     box-shadow: 4px 4px 4px 0px rgba(23, 23, 23, 0.25);
-    border-radius: 3rem;
+    border-radius: 2rem;
     .imgWrap {
-      width: 30%;
+      width: 32%;
       aspect-ratio: 3 / 4;
       background: url(../../public/image/me.png),
         linear-gradient(180deg, $pink 0%, #8f8f8f 100%);
