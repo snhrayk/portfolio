@@ -9,6 +9,9 @@ import Herstel from "./windowPages/works/herstel";
 import Contact from "./windowPages/contact";
 import Florita from "./windowPages/works/florita";
 import FaveTag from "./windowPages/works/faveTag";
+import Yurumetabi from "./windowPages/works/yurumetabi";
+import CandleNight from "./windowPages/works/candleNight";
+import NameCard from "./windowPages/works/nameCard";
 
 export default function Window(props: any) {
   const renderContent = () => {
@@ -39,6 +42,9 @@ export default function Window(props: any) {
         {/* <Herstel /> */}
         {/* <Florita /> */}
         {/* <FaveTag /> */}
+        {/* <Yurumetabi /> */}
+        {/* <CandleNight /> */}
+        {/* <NameCard /> */}
         {/* <Contact /> */}
         {renderContent()}
       </div>

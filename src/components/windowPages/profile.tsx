@@ -47,7 +47,7 @@ export default function Profile() {
               <p>html</p>
               <p>css</p>
               <p>scss</p>
-              <p>java script</p>
+              <p>js</p>
               <p>react</p>
               <p>next.js</p>
               <p>firebase</p>
