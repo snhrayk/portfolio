@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "../../../styles/yurumetabi.module.scss";
+import styles from "../../../styles/Yurumetabi.module.scss";
 import Florita from "./florita";
 import FaveTag from "./faveTag";
 import CandleNight from "./candleNight";
