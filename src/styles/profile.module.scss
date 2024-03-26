@@ -113,6 +113,17 @@ html {
       font-weight: lighter;
       text-align: center;
     }
+    .certification {
+      margin: 3.2rem 0;
+      font-family: $subFont;
+      text-align: center;
+      p:nth-child(1) {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
     .skillsWrap {
       width: 100%;
       height: 12rem;

@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import styles from "../../../styles/Yurumetabi.module.scss";
+import styles from "../../../styles/yurumetabi.module.scss";
 import Florita from "./florita";
 import FaveTag from "./faveTag";
 import CandleNight from "./candleNight";
 import NameCard from "./nameCard";
 import Works from ".";
 import Herstel from "./herstel";
+import WorksSlider from "./worksSlider";
 
 export default function Yurumetabi() {
   const [showWorks, setShowWorks] = useState(false);
@@ -77,33 +78,14 @@ export default function Yurumetabi() {
         <p onClick={handleShowCandleNight}>キャンドルナイトポスター</p>
         <p onClick={handleShowNameCard}>名刺</p>
       </div>
-      <div className={styles.herstelWrap}>
-        <div className={styles.herstelSliderWrap}>
-          {/* <div
-            id="thumbnail-carousel"
-            className={styles.thumbnailSlider}
-            aria-label="サムネイルスライダー。各サムネイルをクリックすると、メインのスライダーが切り替わります"
-          >
-            <div className={styles.thumbnailWrap}>
-              <ul className={styles.thumbnails}>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/herstel.png" alt="作品全体" />
-                </li>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/florita.png" alt="作品全体" />
-                </li>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/faveTag.png" alt="作品全体" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className={styles.back} onClick={backBtn}></div>
-          <div className={styles.next} onClick={nextBtn}></div> */}
+      <div className={styles.yurumetabiWrap}>
+        <div className={styles.sliderWrap}>
+          <WorksSlider />
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>
             <p className={styles.prize}>第7回専門学校HTML5作品アワード入選</p>
+            <p className={styles.prize}>+E展コンセプト賞受賞</p>
           </div>
           <h3>ゆるめ旅</h3>
           <p className={styles.date}>$23.10~23.02</p>

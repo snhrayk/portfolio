@@ -6,6 +6,7 @@ import CandleNight from "./candleNight";
 import NameCard from "./nameCard";
 import Works from ".";
 import Herstel from "./herstel";
+import WorksSlider from "./worksSlider";
 // import Splide from "@splidejs/splide";
 
 export default function Florita() {
@@ -23,9 +24,6 @@ export default function Florita() {
   const handleShowHerstel = () => {
     setShowHerstel(true);
   };
-  // const handleShowFlorita = () => {
-  //   setShowFlorita(true);
-  // };
   const handleShowFaveTag = () => {
     setShowFaveTag(true);
   };
@@ -45,9 +43,6 @@ export default function Florita() {
   if (showHerstel) {
     return <Herstel />;
   }
-  // if (showFlorita) {
-  //   return <Florita />;
-  // }
   if (showFaveTag) {
     return <FaveTag />;
   }
@@ -77,29 +72,9 @@ export default function Florita() {
         <p onClick={handleShowCandleNight}>キャンドルナイトポスター</p>
         <p onClick={handleShowNameCard}>名刺</p>
       </div>
-      <div className={styles.herstelWrap}>
-        <div className={styles.herstelSliderWrap}>
-          {/* <div
-            id="thumbnail-carousel"
-            className={styles.thumbnailSlider}
-            aria-label="サムネイルスライダー。各サムネイルをクリックすると、メインのスライダーが切り替わります"
-          >
-            <div className={styles.thumbnailWrap}>
-              <ul className={styles.thumbnails}>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/herstel.png" alt="作品全体" />
-                </li>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/florita.png" alt="作品全体" />
-                </li>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/faveTag.png" alt="作品全体" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className={styles.back} onClick={backBtn}></div>
-          <div className={styles.next} onClick={nextBtn}></div> */}
+      <div className={styles.floritaWrap}>
+        <div className={styles.sliderWrap}>
+          <WorksSlider />
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>

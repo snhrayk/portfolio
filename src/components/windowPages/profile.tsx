@@ -77,6 +77,16 @@ export default function Profile() {
             </div>
           </div>
         </div>
+        <div className={styles.certification}>
+          <p>多くの資格を取得しています</p>
+          <p>
+            全商簿記実務検定1級 / 全商英語検定1級 /
+            全商ビジネス計算実務検定試験(電卓)1級 /
+            <br />
+            全商商業経済検定1級 / 全商情報処理検定2級(プログラミング部門) /
+            色彩検定3級
+          </p>
+        </div>
       </section>
       <section className={styles.myFav}>
         <h2>my favorite</h2>

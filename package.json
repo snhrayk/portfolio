@@ -20,8 +20,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.30.2",
     "ress": "^5.0.2",
     "sass": "^1.71.0",
+    "slick-carousel": "^1.8.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -51,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-slick": "^0.23.13",
     "daisyui": "^4.7.2"
   }
 }

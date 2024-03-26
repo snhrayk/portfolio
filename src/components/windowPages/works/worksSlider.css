@@ -1,0 +1,74 @@
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* スライド全体の高さと長さ */
+  width: 100%;
+}
+
+.slick-slider {
+  /* 表示するイメージがスライド全体に対しての高さと長さ */
+  width: 80%;
+  aspect-ratio: 1.4 / 1;
+}
+.slick-slider div {
+  /* ここはそのまま */
+  width: 100%;
+  height: 100%;
+}
+.slick-slider div img {
+  /* ここはそのまま */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slick-list {
+  /* ここはそのまま */
+  width: 100%;
+  height: 100%;
+}
+.slick-track {
+  /* ここはそのまま */
+  width: 100%;
+  height: 100%;
+}
+.slick-dots {
+  /* これはしたの小さい写真のbox */
+  width: 100%;
+  height: 5rem;
+  /* 小さい写真のboxと表示してる写真の距離はここに設定 */
+  bottom: -6rem;
+  display: flex !important;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.slick-dots::-webkit-scrollbar {
+  /* ここはそのまま */
+  display: none;
+}
+
+.slick-dots li {
+  /* 小さい写真のサイズはここに設定 */
+  width: 8rem;
+  height: 6.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.slick-dots li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slick-dots li img {
+  /* 表示されてない時は小さい写真がものくろになる設定 */
+  filter: grayscale(100%);
+}
+.slick-dots li.slick-active img {
+  /* 表示されてる時は色をつく*/
+  filter: none;
+}

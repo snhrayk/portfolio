@@ -80,16 +80,9 @@ html {
     // background-color: $white;
     background: url(../../public/image/bg-line.svg) repeat, $white;
     // border: 1px solid tomato;
-    .ImgWrap {
+    .sliderWrap {
       width: 50%;
-      padding: 4% 2% 0 2%;
-      .img {
-        width: 100%;
-        aspect-ratio: 1.4 / 1;
-        background-image: url(../../public/image/CN-poster.png);
-        background-size: cover;
-        background-position: center;
-      }
+      padding-top: 4%;
     }
     .data {
       width: 50%;
@@ -98,7 +91,7 @@ html {
       .dataTop {
         display: flex;
         align-items: end;
-        column-gap: 0.8rem;
+        column-gap: 0.4rem;
         .prize {
           background-color: $white;
           border: 1px solid $pink;

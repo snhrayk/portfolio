@@ -6,6 +6,7 @@ import Yurumetabi from "./yurumetabi";
 import NameCard from "./nameCard";
 import Works from ".";
 import Herstel from "./herstel";
+import WorksSlider from "./worksSlider";
 
 export default function CandleNight() {
   const [showWorks, setShowWorks] = useState(false);
@@ -70,8 +71,8 @@ export default function CandleNight() {
         <p onClick={handleShowNameCard}>名刺</p>
       </div>
       <div className={styles.candleNightWrap}>
-        <div className={styles.ImgWrap}>
-          <div className={styles.img}></div>
+        <div className={styles.sliderWrap}>
+          <WorksSlider />
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>

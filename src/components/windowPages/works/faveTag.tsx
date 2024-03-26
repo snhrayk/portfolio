@@ -6,6 +6,7 @@ import CandleNight from "./candleNight";
 import NameCard from "./nameCard";
 import Works from ".";
 import Herstel from "./herstel";
+import WorksSlider from "./worksSlider";
 
 export default function FaveTag() {
   const [showWorks, setShowWorks] = useState(false);
@@ -69,29 +70,9 @@ export default function FaveTag() {
         <p onClick={handleShowCandleNight}>キャンドルナイトポスター</p>
         <p onClick={handleShowNameCard}>名刺</p>
       </div>
-      <div className={styles.herstelWrap}>
-        <div className={styles.herstelSliderWrap}>
-          {/* <div
-            id="thumbnail-carousel"
-            className={styles.thumbnailSlider}
-            aria-label="サムネイルスライダー。各サムネイルをクリックすると、メインのスライダーが切り替わります"
-          >
-            <div className={styles.thumbnailWrap}>
-              <ul className={styles.thumbnails}>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/herstel.png" alt="作品全体" />
-                </li>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/florita.png" alt="作品全体" />
-                </li>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/faveTag.png" alt="作品全体" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className={styles.back} onClick={backBtn}></div>
-          <div className={styles.next} onClick={nextBtn}></div> */}
+      <div className={styles.faveTagWrap}>
+        <div className={styles.sliderWrap}>
+          <WorksSlider />
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}></div>

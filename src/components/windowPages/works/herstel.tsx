@@ -6,11 +6,10 @@ import Yurumetabi from "./yurumetabi";
 import CandleNight from "./candleNight";
 import NameCard from "./nameCard";
 import Works from ".";
-// import Splide from "@splidejs/splide";
+import WorksSlider from "./worksSlider";
 
 export default function Herstel() {
   const [showWorks, setShowWorks] = useState(false);
-  // const [showHerstel, setShowHerstel] = useState(false);
   const [showFlorita, setShowFlorita] = useState(false);
   const [showFaveTag, setShowFaveTag] = useState(false);
   const [showYurumetabi, setShowYurumetabi] = useState(false);
@@ -20,9 +19,6 @@ export default function Herstel() {
   const handleShowWorks = () => {
     setShowWorks(true);
   };
-  // const handleShowHerstel = () => {
-  //   setShowHerstel(true);
-  // };
   const handleShowFlorita = () => {
     setShowFlorita(true);
   };
@@ -42,9 +38,6 @@ export default function Herstel() {
   if (showWorks) {
     return <Works />;
   }
-  // if (showHerstel) {
-  //   return <Herstel />;
-  // }
   if (showFlorita) {
     return <Florita />;
   }
@@ -78,34 +71,12 @@ export default function Herstel() {
         <p onClick={handleShowNameCard}>名刺</p>
       </div>
       <div className={styles.herstelWrap}>
-        <div className={styles.herstelSliderWrap}>
-          {/* <div
-            id="thumbnail-carousel"
-            className={styles.thumbnailSlider}
-            aria-label="サムネイルスライダー。各サムネイルをクリックすると、メインのスライダーが切り替わります"
-          >
-            <div className={styles.thumbnailWrap}>
-              <ul className={styles.thumbnails}>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/herstel.png" alt="作品全体" />
-                </li>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/florita.png" alt="作品全体" />
-                </li>
-                <li className={styles.thumbnailImg}>
-                  <img src="../../../image/faveTag.png" alt="作品全体" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className={styles.back} onClick={backBtn}></div>
-          <div className={styles.next} onClick={nextBtn}></div> */}
+        <div className={styles.sliderWrap}>
+          <WorksSlider />
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>
             <p className={styles.prize}>+E展 敢闘賞受賞作品</p>
-            {/* <p>#1年前期</p> */}
-            {/* <p>#個人制作</p> */}
           </div>
           <h3>
             herstel<span>ハーステル</span>
