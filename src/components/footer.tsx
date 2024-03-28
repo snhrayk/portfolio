@@ -15,20 +15,7 @@ export default function Footer() {
   //   return () => clearInterval(interval);
   // }, []);
 
-  const githubLink = (
-    event: React.MouseEvent,
-    href: string,
-    windowName: string
-  ) => {
-    event.preventDefault();
-    window.open(href, windowName);
-  };
-
-  const instagramLink = (
-    event: React.MouseEvent,
-    href: string,
-    windowName: string
-  ) => {
+  const link = (event: React.MouseEvent, href: string, windowName: string) => {
     event.preventDefault();
     window.open(href, windowName);
   };
@@ -40,7 +27,7 @@ export default function Footer() {
           <a
             href="https://github.com/snhrayk"
             onClick={(event) =>
-              githubLink(event, "https://github.com/snhrayk", "私のGitHub")
+              link(event, "https://github.com/snhrayk", "私のGitHub")
             }
           >
             <img src="/image/github_icon.svg" alt="私のGitHub" />
@@ -48,11 +35,7 @@ export default function Footer() {
           <a
             href="https://www.instagram.com/web.s7/"
             onClick={(event) =>
-              instagramLink(
-                event,
-                "https://www.instagram.com/web.s7/",
-                "私のInstagram"
-              )
+              link(event, "https://www.instagram.com/web.s7/", "私のInstagram")
             }
           >
             <img src="/image/instagram_icon.svg" alt="私のInstagram" />

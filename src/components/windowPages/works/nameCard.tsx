@@ -73,7 +73,12 @@ export default function NameCard() {
       </div>
       <div className={styles.nameCardWrap}>
         <div className={styles.sliderWrap}>
-          <WorksSlider />
+          <WorksSlider
+            images={[
+              "../../../image/herstel.png",
+              "../../../image/florita.png",
+            ]}
+          />{" "}
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}></div>

@@ -34,6 +34,10 @@ export default function Herstel() {
   const handleShowNameCard = () => {
     setShowNameCard(true);
   };
+  const link = (event: React.MouseEvent, href: string, windowName: string) => {
+    event.preventDefault();
+    window.open(href, windowName);
+  };
 
   if (showWorks) {
     return <Works />;
@@ -72,7 +76,36 @@ export default function Herstel() {
       </div>
       <div className={styles.herstelWrap}>
         <div className={styles.sliderWrap}>
-          <WorksSlider />
+          <WorksSlider
+            images={[
+              "../../../image/herstel.png",
+              "../../../image/herstel-logo.png",
+              "../../../image/herstel-flyer.png",
+              "../../../image/herstel-leaflet.png",
+              "../../../image/herstel-set.png",
+            ]}
+          />{" "}
+          <p className={styles.pdfLink}>
+            <a
+              href="../../../image/herstel.pdf"
+              onClick={(event) =>
+                link(
+                  event,
+                  "../../../image/herstel.pdf",
+                  "スライドショー拡大表示"
+                )
+              }
+            >
+              スライドショー拡大表示
+            </a>
+          </p>
+          <div className={styles.pageExplain}>
+            <p>1ページ目:作品全体</p>
+            <p>2ページ目:ロゴ</p>
+            <p>3ページ目:雑誌の広告・はがきデザイン</p>
+            <p>4ページ目:リーフレット</p>
+            <p>5ページ目:各セット</p>
+          </div>
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>
@@ -83,7 +116,7 @@ export default function Herstel() {
           </h3>
           <p className={styles.date}>$23.04~23.08</p>
           <p className={styles.mainExplain}>
-            今子育てに奮闘中の主婦の方に向けた<span>紅茶定期便サービス</span>。
+            今子育てに奮闘中の主婦の方に向けた紅茶定期便サービス。
             <br />
             子育ての疲れに効果的な紅茶をご用意しております。
           </p>
@@ -103,7 +136,34 @@ export default function Herstel() {
           <div className={styles.btnWrap}>
             <p className={styles.term}>1年前期</p>
             <p className={styles.siteBtn}>
-              <a href="#">サイトを見る</a>
+              <a
+                href="https://snhrayk.github.io/herstel/"
+                onClick={(event) =>
+                  link(
+                    event,
+                    "https://snhrayk.github.io/herstel/",
+                    "herselのサイトへ"
+                  )
+                }
+              >
+                サイトを見る
+              </a>
+            </p>
+          </div>
+          <div className={styles.linkWrap}>
+            <p>
+              <a
+                href="https://github.com/snhrayk/herstel.git"
+                onClick={(event) =>
+                  link(
+                    event,
+                    "https://github.com/snhrayk/herstel.git",
+                    "githubへ"
+                  )
+                }
+              >
+                <span>github</span> - herstel
+              </a>
             </p>
           </div>
           <div>

@@ -62,7 +62,7 @@ export default function Works() {
       <section className={styles.herstel}>
         <div className={styles.imgArea}></div>
         <h2>
-          herstel<span>敢闘賞受賞</span>
+          herstel<span>+E展敢闘賞受賞</span>
         </h2>
         <p className={styles.explain}>
           今子育てに奮闘中の主婦の方に向けた紅茶定期便サービス。
@@ -100,6 +100,7 @@ export default function Works() {
         <div className={styles.imgArea}></div>
         <h2 className={styles.jpn}>
           ゆるめ旅<span>第7回専門学校HTML5作品アワード入選</span>
+          <span>+E展コンセプト賞受賞</span>
         </h2>
         <p className={styles.explain}>
           遠回りをして目的地の着くルート案内機能と見つけたスポットを撮影して共有できるスポット共有機能を合わせた新しいルート案内アプリです。

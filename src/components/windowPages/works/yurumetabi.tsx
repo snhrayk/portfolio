@@ -80,7 +80,12 @@ export default function Yurumetabi() {
       </div>
       <div className={styles.yurumetabiWrap}>
         <div className={styles.sliderWrap}>
-          <WorksSlider />
+          <WorksSlider
+            images={[
+              "../../../image/herstel.png",
+              "../../../image/florita.png",
+            ]}
+          />{" "}
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>

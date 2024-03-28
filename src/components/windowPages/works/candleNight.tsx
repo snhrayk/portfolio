@@ -72,7 +72,12 @@ export default function CandleNight() {
       </div>
       <div className={styles.candleNightWrap}>
         <div className={styles.sliderWrap}>
-          <WorksSlider />
+          <WorksSlider
+            images={[
+              "../../../image/herstel.png",
+              "../../../image/florita.png",
+            ]}
+          />{" "}
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>

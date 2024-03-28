@@ -7,12 +7,10 @@ import NameCard from "./nameCard";
 import Works from ".";
 import Herstel from "./herstel";
 import WorksSlider from "./worksSlider";
-// import Splide from "@splidejs/splide";
 
 export default function Florita() {
   const [showWorks, setShowWorks] = useState(false);
   const [showHerstel, setShowHerstel] = useState(false);
-  // const [showFlorita, setShowFlorita] = useState(false);
   const [showFaveTag, setShowFaveTag] = useState(false);
   const [showYurumetabi, setShowYurumetabi] = useState(false);
   const [showCandleNight, setShowCandleNight] = useState(false);
@@ -35,6 +33,10 @@ export default function Florita() {
   };
   const handleShowNameCard = () => {
     setShowNameCard(true);
+  };
+  const link = (event: React.MouseEvent, href: string, windowName: string) => {
+    event.preventDefault();
+    window.open(href, windowName);
   };
 
   if (showWorks) {
@@ -74,7 +76,21 @@ export default function Florita() {
       </div>
       <div className={styles.floritaWrap}>
         <div className={styles.sliderWrap}>
-          <WorksSlider />
+          <WorksSlider images={["../../../image/florita.png"]} />{" "}
+          <p>
+            <a
+              href="../../../image/florita.pdf"
+              onClick={(event) =>
+                link(
+                  event,
+                  "../../../image/florita.pdf",
+                  "スライドショー拡大表示"
+                )
+              }
+            >
+              スライドショー拡大表示
+            </a>
+          </p>{" "}
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>
@@ -103,7 +119,34 @@ export default function Florita() {
           <div className={styles.btnWrap}>
             <p className={styles.term}>夏期講習</p>
             <p className={styles.siteBtn}>
-              <a href="#">サイトを見る</a>
+              <a
+                href="https://github.com/SuzakiKaito/florita.git"
+                onClick={(event) =>
+                  link(
+                    event,
+                    "https://github.com/SuzakiKaito/florita.git",
+                    "florita"
+                  )
+                }
+              >
+                サイトを見る
+              </a>
+            </p>
+          </div>
+          <div className={styles.linkWrap}>
+            <p>
+              <a
+                href="https://github.com/SuzakiKaito/florita.git"
+                onClick={(event) =>
+                  link(
+                    event,
+                    "https://github.com/SuzakiKaito/florita.git",
+                    "githubへ"
+                  )
+                }
+              >
+                <span>github</span> - florita
+              </a>
             </p>
           </div>
           <div>

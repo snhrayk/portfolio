@@ -52,8 +52,8 @@
 
 .slick-dots li {
   /* 小さい写真のサイズはここに設定 */
-  width: 8rem;
-  height: 6.4rem;
+  width: 7.2rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;

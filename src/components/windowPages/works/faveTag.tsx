@@ -34,6 +34,10 @@ export default function FaveTag() {
   const handleShowNameCard = () => {
     setShowNameCard(true);
   };
+  const link = (event: React.MouseEvent, href: string, windowName: string) => {
+    event.preventDefault();
+    window.open(href, windowName);
+  };
 
   if (showWorks) {
     return <Works />;
@@ -72,7 +76,21 @@ export default function FaveTag() {
       </div>
       <div className={styles.faveTagWrap}>
         <div className={styles.sliderWrap}>
-          <WorksSlider />
+          <WorksSlider images={["../../image/faveTag.png"]} />{" "}
+          <p>
+            <a
+              href="../../../image/herstel.pdf"
+              onClick={(event) =>
+                link(
+                  event,
+                  "../../../image/herstel.pdf",
+                  "スライドショー拡大表示"
+                )
+              }
+            >
+              スライドショー拡大表示
+            </a>
+          </p>{" "}
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}></div>
@@ -99,7 +117,14 @@ export default function FaveTag() {
           <div className={styles.btnWrap}>
             <p className={styles.term}>1年前期</p>
             <p className={styles.siteBtn}>
-              <a href="#">アプリを見る</a>
+              <a
+                href="https://snhrayk.github.io/CW2-faveTag/"
+                onClick={(event) =>
+                  link(event, "https://snhrayk.github.io/CW2-faveTag/", "fave#")
+                }
+              >
+                アプリを見る
+              </a>
             </p>
           </div>
           <div>

@@ -83,6 +83,35 @@ html {
     .sliderWrap {
       width: 50%;
       padding-top: 4%;
+      p {
+        margin: 18% 0 0 10%;
+        font-size: 1.2rem;
+        a {
+          color: $black;
+          span {
+            font-weight: bold;
+          }
+          &:before {
+            content: "";
+            width: 1.6rem;
+            aspect-ratio: 1;
+            display: inline-block;
+            vertical-align: text-top;
+            background-image: url(../../public/image/link.svg);
+            background-size: cover;
+            background-position: center;
+            margin-right: 0.2rem;
+          }
+        }
+        &:hover {
+          a {
+            color: $pink;
+            &:before {
+              background-image: url(../../public/image/link-hover.svg);
+            }
+          }
+        }
+      }
     }
     .data {
       width: 50%;
@@ -215,6 +244,38 @@ html {
         }
         .siteBtn:hover {
           background-color: $pink;
+        }
+      }
+      .linkWrap {
+        display: flex;
+        p {
+          margin: 0.4rem 1.2rem 2rem 0.2rem;
+          font-size: 1.2rem;
+          a {
+            color: $black;
+            span {
+              font-weight: bold;
+            }
+            &:before {
+              content: "";
+              width: 1.6rem;
+              aspect-ratio: 1;
+              display: inline-block;
+              vertical-align: text-top;
+              background-image: url(../../public/image/github-mark.svg);
+              background-size: cover;
+              background-position: center;
+              margin-right: 0.2rem;
+            }
+          }
+          &:hover {
+            a {
+              color: $pink;
+              &:before {
+                background-image: url(../../public/image/github-mark-hover.svg);
+              }
+            }
+          }
         }
       }
       .subExplain {

@@ -4,17 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./worksSlider.css";
 
-// ここに写真のURLを追加する
-const images = [
-  "../../../image/herstel.png",
-  "../../../image/florita.png",
-  "../../../image/faveTag.png",
-  "../../../image/yurumetabi.png",
-  "../../../image/CN-poster.png",
-  "../../../image/nameCard.png",
-];
+interface WorksSliderProps {
+  images: string[];
+}
 
-function WorksSlider() {
+function WorksSlider({ images }: WorksSliderProps) {
   const sliderRef = useRef<Slider | null>(null);
   const sliderContainerRef = useRef<HTMLDivElement | null>(null);
 
