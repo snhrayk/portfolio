@@ -34,6 +34,10 @@ export default function CandleNight() {
   const handleShowNameCard = () => {
     setShowNameCard(true);
   };
+  const link = (event: React.MouseEvent, href: string, windowName: string) => {
+    event.preventDefault();
+    window.open(href, windowName);
+  };
 
   if (showWorks) {
     return <Works />;
@@ -72,12 +76,21 @@ export default function CandleNight() {
       </div>
       <div className={styles.candleNightWrap}>
         <div className={styles.sliderWrap}>
-          <WorksSlider
-            images={[
-              "../../../image/herstel.png",
-              "../../../image/florita.png",
-            ]}
-          />{" "}
+          <WorksSlider images={["../../../image/CN-poster.png"]} />{" "}
+          <p className={styles.pdfLink}>
+            <a
+              href="../../../image/candleNight.pdf"
+              onClick={(event) =>
+                link(
+                  event,
+                  "../../../image/candleNight.pdf",
+                  "スライドショー拡大表示"
+                )
+              }
+            >
+              スライドショー拡大表示
+            </a>
+          </p>{" "}
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>

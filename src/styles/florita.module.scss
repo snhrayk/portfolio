@@ -83,7 +83,7 @@ html {
     .sliderWrap {
       width: 50%;
       padding-top: 4%;
-      p {
+      .pdfLink {
         margin: 18% 0 0 10%;
         font-size: 1.2rem;
         a {
@@ -110,6 +110,12 @@ html {
               background-image: url(../../public/image/link-hover.svg);
             }
           }
+        }
+      }
+      .pageExplain {
+        margin: 2% 0 0 12%;
+        p {
+          font-size: 1rem;
         }
       }
     }

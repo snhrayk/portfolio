@@ -83,6 +83,41 @@ html {
     .sliderWrap {
       width: 50%;
       padding-top: 4%;
+      .pdfLink {
+        margin: 18% 0 0 10%;
+        font-size: 1.2rem;
+        a {
+          color: $black;
+          span {
+            font-weight: bold;
+          }
+          &:before {
+            content: "";
+            width: 1.6rem;
+            aspect-ratio: 1;
+            display: inline-block;
+            vertical-align: text-top;
+            background-image: url(../../public/image/link.svg);
+            background-size: cover;
+            background-position: center;
+            margin-right: 0.2rem;
+          }
+        }
+        &:hover {
+          a {
+            color: $pink;
+            &:before {
+              background-image: url(../../public/image/link-hover.svg);
+            }
+          }
+        }
+      }
+      .pageExplain {
+        margin: 2% 0 0 12%;
+        p {
+          font-size: 1rem;
+        }
+      }
     }
     .data {
       width: 50%;

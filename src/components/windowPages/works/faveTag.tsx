@@ -76,21 +76,48 @@ export default function FaveTag() {
       </div>
       <div className={styles.faveTagWrap}>
         <div className={styles.sliderWrap}>
-          <WorksSlider images={["../../image/faveTag.png"]} />{" "}
-          <p>
-            <a
-              href="../../../image/herstel.pdf"
-              onClick={(event) =>
-                link(
-                  event,
-                  "../../../image/herstel.pdf",
-                  "スライドショー拡大表示"
-                )
-              }
-            >
-              スライドショー拡大表示
-            </a>
-          </p>{" "}
+          <WorksSlider
+            images={[
+              "../../image/faveTag.png",
+              "../../image/faveTag-logo.png",
+              "../../image/faveTag-sticker.png",
+              "../../image/faveTag-cd.png",
+              "../../image/faveTag-instagram.png",
+            ]}
+          />{" "}
+          <div className={styles.pdfLinkWrap}>
+            <p className={styles.pdfLink}>
+              <a
+                href="../../../image/faveTag.pdf"
+                onClick={(event) =>
+                  link(
+                    event,
+                    "../../../image/faveTag.pdf",
+                    "スライドショー拡大表示"
+                  )
+                }
+              >
+                スライドショー拡大表示
+              </a>
+            </p>
+            <p className={styles.pdfLink}>
+              <a
+                href="../../../image/faveTag-proposal.pdf"
+                onClick={(event) =>
+                  link(event, "../../../image/faveTag-proposal.pdf", "企画書")
+                }
+              >
+                企画書
+              </a>
+            </p>
+          </div>
+          <div className={styles.pageExplain}>
+            <p>1ページ目:作品全体</p>
+            <p>2ページ目:ロゴ</p>
+            <p>3ページ目:電車の広告ステッカー</p>
+            <p>4ページ目:CDの中に入れるフライヤー</p>
+            <p>5ページ目:Instagram用広告</p>
+          </div>
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}></div>
@@ -115,7 +142,7 @@ export default function FaveTag() {
             </div>
           </div>
           <div className={styles.btnWrap}>
-            <p className={styles.term}>1年前期</p>
+            <p className={styles.term}>1年後期</p>
             <p className={styles.siteBtn}>
               <a
                 href="https://snhrayk.github.io/CW2-faveTag/"
@@ -127,11 +154,27 @@ export default function FaveTag() {
               </a>
             </p>
           </div>
+          <div className={styles.linkWrap}>
+            <p>
+              <a
+                href="https://github.com/snhrayk/CW2-faveTag.git"
+                onClick={(event) =>
+                  link(
+                    event,
+                    "https://github.com/snhrayk/CW2-faveTag.git",
+                    "githubへ"
+                  )
+                }
+              >
+                <span>github</span> - fave#
+              </a>
+            </p>
+          </div>
           <div>
             <h4>制作感想</h4>
             <p className={styles.subExplain}>
               私が洋楽好きであることから、洋楽好きの方に向けたコミュニティアプリを作りたいと思い、このwebアプリを制作しました。
-              限られた期間の中でどうやって効率よく作業を進めるかをもっと意識するべきだったこと、firebaseやspotifyAPIを利用しやすくするためにNext.jsを使用するべきだったこと反省しています。
+              限られた期間の中でどうやって効率よく作業を進めるかをもっと意識するべきだったこと、firebaseやspotifyAPIを利用しやすくするためにNext.jsを使用するべきだったことに反省しています。
               反省点からNext.jsでこの作品を制作し直す予定です。
             </p>
           </div>

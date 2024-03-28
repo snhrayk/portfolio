@@ -77,7 +77,7 @@ export default function Florita() {
       <div className={styles.floritaWrap}>
         <div className={styles.sliderWrap}>
           <WorksSlider images={["../../../image/florita.png"]} />{" "}
-          <p>
+          <p className={styles.pdfLink}>
             <a
               href="../../../image/florita.pdf"
               onClick={(event) =>
@@ -91,6 +91,9 @@ export default function Florita() {
               スライドショー拡大表示
             </a>
           </p>{" "}
+          <div className={styles.pageExplain}>
+            <p>1ページ目:作品全体</p>
+          </div>
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>
@@ -153,8 +156,7 @@ export default function Florita() {
             <h4>制作感想</h4>
             <p className={styles.subExplain}>
               初めてのチーム制作。私は主にLPのデザイン作成と、企画書の作成を担当しました。
-              LPについてや、figma・scssの使い方、企画書の作り方など1年の前期では習わなかったことを
-              先輩に丁寧に教えてもらいながら学ぶことができました。
+              LPについてや、figma・scssの使い方、企画書の作り方など1年の前期では習わなかったことを先輩に丁寧に教えてもらいながら学ぶことができました。
             </p>
           </div>
         </div>

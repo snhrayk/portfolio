@@ -35,6 +35,10 @@ export default function NameCard() {
   const handleShowCandleNight = () => {
     setShowCandleNight(true);
   };
+  const link = (event: React.MouseEvent, href: string, windowName: string) => {
+    event.preventDefault();
+    window.open(href, windowName);
+  };
 
   if (showWorks) {
     return <Works />;
@@ -75,10 +79,27 @@ export default function NameCard() {
         <div className={styles.sliderWrap}>
           <WorksSlider
             images={[
-              "../../../image/herstel.png",
-              "../../../image/florita.png",
+              "../../../image/nameCard.png",
+              "../../../image/nameCard-iceCream-front.png",
+              "../../../image/nameCard-iceCream-back.png",
+              "../../../image/nameCard-gradation-front.png",
+              "../../../image/nameCard-gradation-back.png",
             ]}
           />{" "}
+          <p className={styles.pdfLink}>
+            <a
+              href="../../../image/nameCard.pdf"
+              onClick={(event) =>
+                link(
+                  event,
+                  "../../../image/nameCard.pdf",
+                  "スライドショー拡大表示"
+                )
+              }
+            >
+              スライドショー拡大表示
+            </a>
+          </p>{" "}
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}></div>

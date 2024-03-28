@@ -39,7 +39,7 @@ export default function Window(props: any) {
       <div className={styles.pageArea}>
         {/* <Profile /> */}
         {/* <Works /> */}
-        <Herstel />
+        {/* <Herstel /> */}
         {/* <Florita /> */}
         {/* <FaveTag /> */}
         {/* <Yurumetabi /> */}

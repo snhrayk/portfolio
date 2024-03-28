@@ -34,11 +34,7 @@ export default function Yurumetabi() {
   const handleShowNameCard = () => {
     setShowNameCard(true);
   };
-  const webAppLink = (
-    event: React.MouseEvent,
-    href: string,
-    windowName: string
-  ) => {
+  const link = (event: React.MouseEvent, href: string, windowName: string) => {
     event.preventDefault();
     window.open(href, windowName);
   };
@@ -80,12 +76,40 @@ export default function Yurumetabi() {
       </div>
       <div className={styles.yurumetabiWrap}>
         <div className={styles.sliderWrap}>
-          <WorksSlider
-            images={[
-              "../../../image/herstel.png",
-              "../../../image/florita.png",
-            ]}
-          />{" "}
+          <WorksSlider images={["../../../image/yurumetabi.png"]} />{" "}
+          <div className={styles.pdfLinkWrap}>
+            <p className={styles.pdfLink}>
+              <a
+                href="../../../image/yurumetabi.pdf"
+                onClick={(event) =>
+                  link(
+                    event,
+                    "../../../image/yurumetabi.pdf",
+                    "スライドショー拡大表示"
+                  )
+                }
+              >
+                スライドショー拡大表示
+              </a>
+            </p>
+            <p className={styles.pdfLink}>
+              <a
+                href="../../../image/yurumetabi-proposal.pdf"
+                onClick={(event) =>
+                  link(
+                    event,
+                    "../../../image/yurumetabi-proposal.pdf",
+                    "企画書"
+                  )
+                }
+              >
+                企画書
+              </a>
+            </p>
+          </div>
+          <div className={styles.pageExplain}>
+            <p>1ページ目:作品全体</p>
+          </div>
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}>
@@ -108,14 +132,26 @@ export default function Yurumetabi() {
               <a
                 href="https://yurumetabi.vercel.app/"
                 onClick={(event) =>
-                  webAppLink(
-                    event,
-                    "https://yurumetabi.vercel.app/",
-                    "ゆるめ旅"
-                  )
+                  link(event, "https://yurumetabi.vercel.app/", "ゆるめ旅")
                 }
               >
                 アプリを見る
+              </a>
+            </p>
+          </div>
+          <div className={styles.linkWrap}>
+            <p>
+              <a
+                href="https://github.com/kusanohatsumi/yurumetabi.git"
+                onClick={(event) =>
+                  link(
+                    event,
+                    "https://github.com/kusanohatsumi/yurumetabi.git",
+                    "githubへ"
+                  )
+                }
+              >
+                <span>github</span> - ゆるめ旅
               </a>
             </p>
           </div>
@@ -124,7 +160,7 @@ export default function Yurumetabi() {
             <p className={styles.subExplain}>
               エンジニアとしてマイページの制作を担当しました。
               Next.jsやfirebaseはこの作品で初めて触りました。
-              初めてで分からないことだらけでしたが先輩が丁寧に教えてくれたため、無事に形にすることができました。
+              初めてで分からないことだらけでしたが先輩に丁寧に教えてもらったおかげで、なんとか形にすることができました。
             </p>
           </div>
         </div>
