@@ -33,9 +33,9 @@ export default function Footer() {
             <img src="/image/github_icon.svg" alt="私のGitHub" />
           </a>
           <a
-            href="https://www.instagram.com/web.s7/"
+            href="https://www.instagram.com/a8ksw_/"
             onClick={(event) =>
-              link(event, "https://www.instagram.com/web.s7/", "私のInstagram")
+              link(event, "https://www.instagram.com/a8ksw_/", "私のInstagram")
             }
           >
             <img src="/image/instagram_icon.svg" alt="私のInstagram" />
