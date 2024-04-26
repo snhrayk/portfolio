@@ -38,6 +38,10 @@ html {
       font-size: 2rem;
       font-family: $font;
       color: $black;
+      text-align: center;
+      span {
+        font-size: 1.2rem;
+      }
     }
   }
 }

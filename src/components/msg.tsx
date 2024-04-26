@@ -21,7 +21,11 @@ export default function Msg() {
           <Close onClick={handleCloseClick} />
         </div>
         <div className={styles.textArea}>
-          <p>Welcome to my portfolio ＜3</p>
+          <p>
+            Welcome to my portfolio &lt;3
+            <br />
+            <span>アイコンをダブルクリックしてください</span>
+          </p>
         </div>
       </div>
     </>
