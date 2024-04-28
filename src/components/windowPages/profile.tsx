@@ -29,14 +29,30 @@ export default function Profile() {
       <section className={styles.about}>
         <h2>about</h2>
         <p>
-          <span>フロントエンドエンジニア志望。</span>
+          <span>デザインエンジニア志望です</span>
           <br />
-          コーディングは難しいことも多いですが、授業や課題を通して少しずつ成長しています。
-          <br />
-          自分で考えてコードを書いて、それが実際に自分の思い通りに動いたときがコーディングをしている上で感じる楽しい瞬間です。
-          <br />
-          また、デザインも好きなため、デザインもできるエンジニアを目指しています。
+          デザインもできるフロントエンドエンジニアを目指し、日々勉強し続けています。
         </p>
+        <div className={styles.detail}>
+          <div className={styles.detailChild}>
+            <h3>coding</h3>
+            <p>
+              コーディングは難しいことも多いですが、授業や課題を通して少しずつ成長しています。
+              自分でコードを考えて書いて、それが実際に自分の思い通りに動いたときがコーディングをしている上で感じる楽しい瞬間です。
+              <br />
+              reactやnext.jsをさらに極めるため現在勉強中です。
+            </p>
+          </div>
+          <div className={styles.detailChild}>
+            <h3>design</h3>
+            <p>
+              キャンドルナイトに向けてポスターを制作した際、自分のポスターが準グランプリに選ばれたことがきっかけで自分のデザインに自信を持つことができました。
+              そこからデザインに対してさらに興味を持つようになりました。
+              <br />
+              現在はWebサイトやWebアプリに欠かせないUI/UXデザインを勉強中です。
+            </p>
+          </div>
+        </div>
       </section>
       <section className={styles.skills}>
         <h2>skills</h2>
