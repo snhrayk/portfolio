@@ -43,7 +43,6 @@ export default function Footer() {
         </div>
         <p>
           <small>© 2024 Sunahara Ayaka's Portfolio</small>
-          {/* <time>{time.toLocaleTimeString()}</time> */}
         </p>
       </div>
     </div>
