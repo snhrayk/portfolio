@@ -85,7 +85,7 @@ export default function NameCard() {
               "../../../image/nameCard-gradation-front.png",
               "../../../image/nameCard-gradation-back.png",
             ]}
-          />{" "}
+          />
           <p className={styles.pdfLink}>
             <a
               href="../../../image/nameCard.pdf"
@@ -99,7 +99,7 @@ export default function NameCard() {
             >
               スライドショー拡大表示
             </a>
-          </p>{" "}
+          </p>
         </div>
         <div className={styles.data}>
           <div className={styles.dataTop}></div>

@@ -123,7 +123,7 @@ export default function Works() {
           <p className={styles.workDate}>1年後期</p>
           <button onClick={handleShowCandleNight}>詳細を見る</button>
         </div>
-      </section>{" "}
+      </section>
       <section className={styles.nameCard}>
         <div className={styles.imgArea}></div>
         <h2 className={styles.jpn}>名刺</h2>
