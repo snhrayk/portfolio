@@ -97,7 +97,7 @@ export default function CandleNight() {
             <p className={styles.prize}>準グランプリ受賞</p>
           </div>
           <h3>キャンドルナイトポスター</h3>
-          <p className={styles.date}>$23.10~23.11</p>
+          <p className={styles.date}>23.10~23.11</p>
           <p className={styles.mainExplain}>
             毎年中崎町で開催されるキャンドルナイト。そのイベントのポスターを制作しました。
           </p>

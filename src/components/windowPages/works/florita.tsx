@@ -102,7 +102,7 @@ export default function Florita() {
           <h3>
             florita<span>フロリータ</span>
           </h3>
-          <p className={styles.date}>$23.09</p>
+          <p className={styles.date}>23.09</p>
           <p className={styles.mainExplain}>
             女性に向けた服・コスメのランダムショッピング通販アプリ。
             <br />

@@ -124,7 +124,7 @@ export default function FaveTag() {
           <h3>
             fave#<span>フェイブタグ</span>
           </h3>
-          <p className={styles.date}>$23.11~24.02</p>
+          <p className={styles.date}>23.11~24.02</p>
           <p className={styles.mainExplain}>
             洋楽好きに向けたコミュニティWebアプリ。自分の好きな洋楽アーティストごとに作られたコミュニティスペースで、他のユーザーと交流できます。
           </p>

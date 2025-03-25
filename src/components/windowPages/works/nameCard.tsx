@@ -104,7 +104,7 @@ export default function NameCard() {
         <div className={styles.data}>
           <div className={styles.dataTop}></div>
           <h3>名刺</h3>
-          <p className={styles.date}>$23.00</p>
+          <p className={styles.date}>23.00</p>
           <p className={styles.mainExplain}>
             1年前期と1年後期に制作した名刺。デザインから印刷まで全て自分で行いました。
           </p>

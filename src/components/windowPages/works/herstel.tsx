@@ -114,7 +114,7 @@ export default function Herstel() {
           <h3>
             herstel<span>ハーステル</span>
           </h3>
-          <p className={styles.date}>$23.04~23.08</p>
+          <p className={styles.date}>23.04~23.08</p>
           <p className={styles.mainExplain}>
             今子育てに奮闘中の主婦の方に向けた紅茶定期便サービス。
             <br />

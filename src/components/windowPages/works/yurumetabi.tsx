@@ -117,7 +117,7 @@ export default function Yurumetabi() {
             <p className={styles.prize}>+E展コンセプト賞受賞</p>
           </div>
           <h3>ゆるめ旅</h3>
-          <p className={styles.date}>$23.10~23.02</p>
+          <p className={styles.date}>23.10~23.02</p>
           <p className={styles.mainExplain}>
             遠回りをして目的地の着くルート案内機能と見つけたスポットを撮影して共有できるスポット共有機能を合わせた新しいルート案内アプリです。
           </p>
